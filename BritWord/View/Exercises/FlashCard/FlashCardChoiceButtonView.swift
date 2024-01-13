@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct FlashCardChoiceButtonView: View {
-<<<<<<< HEAD
     
     // MARK: - PROPERTIES
     var image : String
@@ -37,17 +36,9 @@ struct FlashCardChoiceButtonView: View {
         .frame(maxWidth: .infinity)
         .frame(width: 80, height: 80)
         
-=======
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
->>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92
     }
 }
 
 #Preview {
-<<<<<<< HEAD
     FlashCardChoiceButtonView(image: "wrong")
-=======
-    FlashCardChoiceButtonView()
->>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92
 }

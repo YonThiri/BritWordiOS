@@ -13,10 +13,7 @@ struct ChapterItemView: View {
         
         HStack {
             
-<<<<<<< HEAD
             // MARK: - DOTTED LINE PROGRESS
-=======
->>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92
             VStack(spacing: 0) {
                 
                 Circle()
@@ -27,7 +24,6 @@ struct ChapterItemView: View {
                     .stroke(style: StrokeStyle(lineWidth: 1.0, dash: [5]))
                     .frame(width: 55)
                 
-<<<<<<< HEAD
             } //: DOTTED LINE PROGRESS
             
             // MARK: - CHAPTER TITLE AND IMAGE
@@ -46,42 +42,13 @@ struct ChapterItemView: View {
             .padding(20)
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(
-=======
-            }
-            
-            
-            ZStack {
->>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92
                 RoundedRectangle(cornerRadius: 15)
                     .fill(whiteColor)
                     .frame(maxWidth: .infinity)
                 
-<<<<<<< HEAD
             )
             .padding(.bottom, 30)
             
-=======
-                HStack(spacing: 15) {
-                    
-                    Image("placeholder")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 80, height: 80)
-                        .clipShape(RoundedRectangle(cornerRadius: 15))
-                    
-                    Text("Greetings")
-                        .font(subTitle)
-                        .foregroundStyle(blackColor)
-                }
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal, 20)
-                
-                
-            }
-            .padding(.bottom, 30)
-            
-                
->>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92
         }
         .frame(height: 150)
     }

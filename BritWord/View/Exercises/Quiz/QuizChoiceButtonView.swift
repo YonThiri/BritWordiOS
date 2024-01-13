@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct QuizChoiceButtonView: View {
-<<<<<<< HEAD
     
     @State private var resultSheetShow : Bool = false
     
@@ -37,10 +36,6 @@ struct QuizChoiceButtonView: View {
                 .presentationDragIndicator(.hidden)
                 .interactiveDismissDisabled()
         })
-=======
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
->>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92
     }
 }
 

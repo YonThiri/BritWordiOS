@@ -15,12 +15,10 @@ struct SplashView: View {
     var body: some View {
         
         if showNextView {
-<<<<<<< HEAD
+
             //HomeView()
             LoginView()
-=======
-            HomeView()
->>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92
+
         }
         else{
             

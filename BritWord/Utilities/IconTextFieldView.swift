@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct IconTextFieldView: View {
-<<<<<<< HEAD
     
     // MARK: - PROPERTIES
     var imageName: String
@@ -37,7 +36,7 @@ struct IconTextFieldView: View {
                     }
                     else{
                         
-                        SecureField("", text: $text, prompt: 
+                        SecureField("", text: $text, prompt:
                                         Text(placeholder).foregroundColor(grayColor))
                             .font(subTitle)
                             .textInputAutocapitalization(.never)
@@ -73,13 +72,3 @@ struct IconTextFieldView: View {
         .padding(.bottom, 15)
     }
 }
-=======
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    IconTextFieldView()
-}
->>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92

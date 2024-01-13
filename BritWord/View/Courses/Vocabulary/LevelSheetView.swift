@@ -15,10 +15,7 @@ struct LevelSheetView: View {
             
             whiteColor
             
-<<<<<<< HEAD
             // MARK: - LEVELS
-=======
->>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92
             VStack(alignment: .leading) {
                 
                 Image("british")
@@ -38,11 +35,7 @@ struct LevelSheetView: View {
                 // MARK: - INTERMEDIATE
                 BorderButtonView(color: vocabularyColor, buttonTitle: "Intermediate")
                 
-<<<<<<< HEAD
             }//: LEVELS
-=======
-            }
->>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92
             .padding()
         }
         .ignoresSafeArea()

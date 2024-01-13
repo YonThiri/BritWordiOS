@@ -5,7 +5,6 @@
 //  Created by Yon Thiri Aung on 04/01/2024.
 //
 
-<<<<<<< HEAD
 import SwiftUI
 
 let backgroundColor = Color("backgroundColor")
@@ -40,6 +39,3 @@ let phoneticsBgColor = Color("phoneticsBgColor")
 // -------------------------------------------
 let wrongColor = Color("wrongColor")
 let correctColor = Color("correctColor")
-=======
-import Foundation
->>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92

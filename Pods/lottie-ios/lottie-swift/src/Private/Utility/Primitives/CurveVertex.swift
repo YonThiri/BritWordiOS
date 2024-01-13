@@ -62,7 +62,7 @@ struct CurveVertex {
    V is the vertex of the receiver.
    P is the position from 0-1.
    O is the outTangent of fromVertex.
-   F====O=========P=======I====V
+   F====O==PI====V
    
    After trimming the curve can be visualized below.
    
@@ -71,7 +71,7 @@ struct CurveVertex {
    T is the trim point.
    TI and TO are the new tangents for the trimPoint
    NO and NI are the new tangents for the startPoint and endPoints
-   S==NO=========TI==T==TO=======NI==E
+   S==NO==TI==T==TONI==E
    */
   func splitCurve(toVertex: CurveVertex, position: CGFloat) ->
     (start: CurveVertex, trimPoint: CurveVertex, end: CurveVertex) {

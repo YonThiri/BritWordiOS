@@ -7,15 +7,11 @@
 
 import SwiftUI
 
-<<<<<<< HEAD
 struct QuizStartView: View {
     
     // MARK: - PROPERTIES
     @State private var isPressed : Bool = false
     
-=======
-struct QuizView: View {
->>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92
     var body: some View {
         
         ZStack {
@@ -38,7 +34,6 @@ struct QuizView: View {
                     imageName: "quiz",
                     color: quizColor)
                 
-<<<<<<< HEAD
                 // MARK: - START BUTTON
                 Button(action: {
                     
@@ -58,11 +53,6 @@ struct QuizView: View {
               
                 QuizView()
             })
-=======
-                Spacer()
-                
-            }
->>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92
             
         }
         .ignoresSafeArea()
@@ -71,9 +61,5 @@ struct QuizView: View {
 }
 
 #Preview {
-<<<<<<< HEAD
     QuizStartView()
-=======
-    QuizView()
->>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92
 }

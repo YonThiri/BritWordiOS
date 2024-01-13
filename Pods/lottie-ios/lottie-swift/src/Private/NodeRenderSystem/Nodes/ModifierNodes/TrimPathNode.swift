@@ -136,7 +136,7 @@ final class TrimPathNode: AnimatorNode {
       
       if !startLength.isInRange(pathStart, pathEnd) &&
         endLength.isInRange(pathStart, pathEnd) {
-        // pathStart|=======E----------------------|pathEnd
+        // pathStart|E----------------------|pathEnd
         // Cut path components, removing after end.
         
         let pathCutLength = endLength - pathStart
@@ -163,7 +163,7 @@ final class TrimPathNode: AnimatorNode {
         
       } else if !endLength.isInRange(pathStart, pathEnd) &&
         startLength.isInRange(pathStart, pathEnd) {
-        // pathStart|-------S======================|pathEnd
+        // pathStart|-------S=|pathEnd
         //
         
         // Cut path components, removing before beginning.
@@ -186,8 +186,8 @@ final class TrimPathNode: AnimatorNode {
         }
       } else if endLength.isInRange(pathStart, pathEnd) &&
         startLength.isInRange(pathStart, pathEnd) {
-        // pathStart|-------S============E---------|endLength
-        // pathStart|=====E----------------S=======|endLength
+        // pathStart|-------S=====E---------|endLength
+        // pathStart|=====E----------------S|endLength
         // trim from path beginning to endLength.
         
         // Cut path components, removing before beginnings.
@@ -203,26 +203,26 @@ final class TrimPathNode: AnimatorNode {
           if !startCutLength.isInRange(subpathStart, subpathEnd) &&
             !endCutLength.isInRange(subpathStart, subpathEnd) {
             // The whole path is included. Add
-            // S|==============================|E
+            // S|==|E
             pathContainer.appendPath(path, updateFrame: frame)
             
           } else if startCutLength.isInRange(subpathStart, subpathEnd) &&
             !endCutLength.isInRange(subpathStart, subpathEnd) {
             /// The start of the path needs to be trimmed
-            //  |-------S======================|E
+            //  |-------S=|E
             let cutLength = startCutLength - subpathStart
             let newPath = path.trim(fromPosition: cutLength / path.length, toPosition: 1, offset: 0, trimSimultaneously: false)
             pathContainer.appendPath(newPath, updateFrame: frame)
           } else if !startCutLength.isInRange(subpathStart, subpathEnd) &&
             endCutLength.isInRange(subpathStart, subpathEnd) {
-            // S|=======E----------------------|
+            // S|E----------------------|
             let cutLength = endCutLength - subpathStart
             let newPath = path.trim(fromPosition: 0, toPosition: cutLength / path.length, offset: 0, trimSimultaneously: false)
             pathContainer.appendPath(newPath, updateFrame: frame)
             break
           } else if startCutLength.isInRange(subpathStart, subpathEnd) &&
             endCutLength.isInRange(subpathStart, subpathEnd) {
-            //  |-------S============E---------|
+            //  |-------S=====E---------|
             let cutFromLength = startCutLength - subpathStart
             let cutToLength = endCutLength - subpathStart
             let newPath = path.trim(fromPosition: cutFromLength / path.length, toPosition: cutToLength / path.length, offset: 0, trimSimultaneously: false)
