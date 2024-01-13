@@ -7,18 +7,133 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2108868F5099B7354524BD1C /* Pods_BritWord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0E043BA2AD936F6CB43920 /* Pods_BritWord.framework */; };
+		B50258A82B52794C0031C3A1 /* ListeningDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50258A72B52794C0031C3A1 /* ListeningDetailView.swift */; };
+		B50258AA2B52A3930031C3A1 /* SimpleNavigationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50258A92B52A3930031C3A1 /* SimpleNavigationHeaderView.swift */; };
+		B50258AC2B52A7520031C3A1 /* PhoneticsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50258AB2B52A7520031C3A1 /* PhoneticsDetailView.swift */; };
+		B50258AE2B52C2DF0031C3A1 /* PhoneticsSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50258AD2B52C2DF0031C3A1 /* PhoneticsSymbolView.swift */; };
+		B50258B02B52C45C0031C3A1 /* PhoneticsExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50258AF2B52C45C0031C3A1 /* PhoneticsExampleView.swift */; };
+		B53EA51A2B4C34A100A1AAAF /* DifferentWordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5192B4C34A100A1AAAF /* DifferentWordsView.swift */; };
+		B53EA51C2B4C38AA00A1AAAF /* NavigationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA51B2B4C38AA00A1AAAF /* NavigationHeaderView.swift */; };
+		B53EA51E2B4C58F300A1AAAF /* DifferentWordTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA51D2B4C58F300A1AAAF /* DifferentWordTextView.swift */; };
+		B53EA5202B4CFB9800A1AAAF /* HomeCoursesDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA51F2B4CFB9800A1AAAF /* HomeCoursesDestination.swift */; };
+		B53EA5232B4D363100A1AAAF /* ListeningListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5222B4D363100A1AAAF /* ListeningListsView.swift */; };
+		B53EA5252B4D3B7600A1AAAF /* ListeningItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5242B4D3B7600A1AAAF /* ListeningItemView.swift */; };
+		B53EA5272B4E48D500A1AAAF /* PhoneticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5262B4E48D500A1AAAF /* PhoneticsView.swift */; };
+		B53EA52A2B4E637300A1AAAF /* PhoneticsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5292B4E637300A1AAAF /* PhoneticsListView.swift */; };
+		B53EA52D2B4E676A00A1AAAF /* TestStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA52C2B4E676A00A1AAAF /* TestStartView.swift */; };
+		B53EA52F2B4E8E7700A1AAAF /* QuizStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA52E2B4E8E7700A1AAAF /* QuizStartView.swift */; };
+		B53EA5312B4E8E8200A1AAAF /* FlashCardStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5302B4E8E8200A1AAAF /* FlashCardStartView.swift */; };
+		B53EA5332B4E8E9800A1AAAF /* ExerciseStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5322B4E8E9800A1AAAF /* ExerciseStartView.swift */; };
+		B53EA53A2B4E9AA500A1AAAF /* FlashCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5392B4E9AA500A1AAAF /* FlashCardView.swift */; };
+		B53EA53C2B4EA7CE00A1AAAF /* LearningProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA53B2B4EA7CE00A1AAAF /* LearningProgressView.swift */; };
+		B53EA53E2B4EB1C700A1AAAF /* FlashCardChoiceButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA53D2B4EB1C700A1AAAF /* FlashCardChoiceButtonView.swift */; };
+		B53EA5402B4ED19A00A1AAAF /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA53F2B4ED19A00A1AAAF /* QuizView.swift */; };
+		B53EA5422B4ED75A00A1AAAF /* QuizChoiceButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5412B4ED75A00A1AAAF /* QuizChoiceButtonView.swift */; };
+		B53EA5442B4F971300A1AAAF /* ResultSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5432B4F971300A1AAAF /* ResultSheetView.swift */; };
+		B53EA5462B4F994100A1AAAF /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5452B4F994100A1AAAF /* ButtonView.swift */; };
+		B53EA5482B4FE60D00A1AAAF /* ChapterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5472B4FE60D00A1AAAF /* ChapterListView.swift */; };
+		B53EA54A2B4FE8DC00A1AAAF /* LevelSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5492B4FE8DC00A1AAAF /* LevelSheetView.swift */; };
+		B53EA54C2B4FE91100A1AAAF /* BorderButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA54B2B4FE91100A1AAAF /* BorderButtonView.swift */; };
+		B53EA54E2B4FF47500A1AAAF /* DottedLineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA54D2B4FF47500A1AAAF /* DottedLineShape.swift */; };
+		B53EA5502B4FF7DF00A1AAAF /* ChapterItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA54F2B4FF7DF00A1AAAF /* ChapterItemView.swift */; };
+		B53EA5522B50259600A1AAAF /* LearnVocabularyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5512B50259600A1AAAF /* LearnVocabularyView.swift */; };
+		B53EA5542B50E7E300A1AAAF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5532B50E7E300A1AAAF /* LoginView.swift */; };
+		B53EA5562B50EDC800A1AAAF /* IconTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5552B50EDC800A1AAAF /* IconTextFieldView.swift */; };
+		B55E8A9B2B517747004DB0D1 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E8A9A2B517747004DB0D1 /* ResultView.swift */; };
+		B55E8A9E2B518047004DB0D1 /* result_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = B55E8A9C2B518046004DB0D1 /* result_animation.json */; };
+		B55E8A9F2B518047004DB0D1 /* confetti_effect.json in Resources */ = {isa = PBXBuildFile; fileRef = B55E8A9D2B518047004DB0D1 /* confetti_effect.json */; };
+		B55E8AA42B518477004DB0D1 /* WordsPhoneticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E8AA32B518477004DB0D1 /* WordsPhoneticsView.swift */; };
 		B56E1D162B466FBB00EFF481 /* BritWordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D152B466FBB00EFF481 /* BritWordApp.swift */; };
-		B56E1D182B466FBB00EFF481 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D172B466FBB00EFF481 /* ContentView.swift */; };
+		B56E1D182B466FBB00EFF481 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D172B466FBB00EFF481 /* SplashView.swift */; };
 		B56E1D1A2B466FBD00EFF481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56E1D192B466FBD00EFF481 /* Assets.xcassets */; };
 		B56E1D1D2B466FBD00EFF481 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56E1D1C2B466FBD00EFF481 /* Preview Assets.xcassets */; };
+		B56E1D292B46C5FE00EFF481 /* splashAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = B56E1D282B46C5FE00EFF481 /* splashAnimation.json */; };
+		B56E1D2B2B46C63D00EFF481 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D2A2B46C63D00EFF481 /* LottieView.swift */; };
+		B56E1D2D2B46C90C00EFF481 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D2C2B46C90C00EFF481 /* HomeView.swift */; };
+		B56E1D2F2B46EFD800EFF481 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D2E2B46EFD800EFF481 /* LogoView.swift */; };
+		B56E1D312B46F02800EFF481 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D302B46F02800EFF481 /* Constants.swift */; };
+		B56E1D382B46F5C400EFF481 /* notos_extra.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B56E1D322B46F5C400EFF481 /* notos_extra.ttf */; };
+		B56E1D392B46F5C400EFF481 /* baloo2_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B56E1D332B46F5C400EFF481 /* baloo2_medium.ttf */; };
+		B56E1D3A2B46F5C400EFF481 /* baloo2_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B56E1D342B46F5C400EFF481 /* baloo2_regular.ttf */; };
+		B56E1D3B2B46F5C400EFF481 /* baloo2_semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B56E1D352B46F5C400EFF481 /* baloo2_semibold.ttf */; };
+		B56E1D3C2B46F5C400EFF481 /* noto_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B56E1D362B46F5C400EFF481 /* noto_regular.ttf */; };
+		B56E1D3D2B46F5C400EFF481 /* baloo2_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B56E1D372B46F5C400EFF481 /* baloo2_bold.ttf */; };
+		B56E1D412B46F65600EFF481 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D402B46F65600EFF481 /* Colors.swift */; };
+		B56E1D432B46F79A00EFF481 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D422B46F79A00EFF481 /* Fonts.swift */; };
+		B56E1D452B47135B00EFF481 /* WordOfTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D442B47135B00EFF481 /* WordOfTheDayView.swift */; };
+		B56E1D492B47147E00EFF481 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D482B47147E00EFF481 /* Modifiers.swift */; };
+		B56E1D4B2B4716A500EFF481 /* RoundedCustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D4A2B4716A500EFF481 /* RoundedCustomShape.swift */; };
+		B56E1D4D2B47B0CB00EFF481 /* CoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D4C2B47B0CB00EFF481 /* CoursesView.swift */; };
+		B56E1D4F2B47D59400EFF481 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D4E2B47D59400EFF481 /* ProfileView.swift */; };
+		B56E1D512B4840AC00EFF481 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D502B4840AC00EFF481 /* ExerciseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		015C2FE97783EA357F6E4C45 /* Pods-BritWord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BritWord.debug.xcconfig"; path = "Target Support Files/Pods-BritWord/Pods-BritWord.debug.xcconfig"; sourceTree = "<group>"; };
+		06F15661BCD62B74D63058B4 /* Pods-BritWord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BritWord.release.xcconfig"; path = "Target Support Files/Pods-BritWord/Pods-BritWord.release.xcconfig"; sourceTree = "<group>"; };
+		B50258A72B52794C0031C3A1 /* ListeningDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningDetailView.swift; sourceTree = "<group>"; };
+		B50258A92B52A3930031C3A1 /* SimpleNavigationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNavigationHeaderView.swift; sourceTree = "<group>"; };
+		B50258AB2B52A7520031C3A1 /* PhoneticsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticsDetailView.swift; sourceTree = "<group>"; };
+		B50258AD2B52C2DF0031C3A1 /* PhoneticsSymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticsSymbolView.swift; sourceTree = "<group>"; };
+		B50258AF2B52C45C0031C3A1 /* PhoneticsExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticsExampleView.swift; sourceTree = "<group>"; };
+		B53EA5192B4C34A100A1AAAF /* DifferentWordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentWordsView.swift; sourceTree = "<group>"; };
+		B53EA51B2B4C38AA00A1AAAF /* NavigationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHeaderView.swift; sourceTree = "<group>"; };
+		B53EA51D2B4C58F300A1AAAF /* DifferentWordTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentWordTextView.swift; sourceTree = "<group>"; };
+		B53EA51F2B4CFB9800A1AAAF /* HomeCoursesDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoursesDestination.swift; sourceTree = "<group>"; };
+		B53EA5222B4D363100A1AAAF /* ListeningListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningListsView.swift; sourceTree = "<group>"; };
+		B53EA5242B4D3B7600A1AAAF /* ListeningItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningItemView.swift; sourceTree = "<group>"; };
+		B53EA5262B4E48D500A1AAAF /* PhoneticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticsView.swift; sourceTree = "<group>"; };
+		B53EA5292B4E637300A1AAAF /* PhoneticsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticsListView.swift; sourceTree = "<group>"; };
+		B53EA52C2B4E676A00A1AAAF /* TestStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStartView.swift; sourceTree = "<group>"; };
+		B53EA52E2B4E8E7700A1AAAF /* QuizStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizStartView.swift; sourceTree = "<group>"; };
+		B53EA5302B4E8E8200A1AAAF /* FlashCardStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardStartView.swift; sourceTree = "<group>"; };
+		B53EA5322B4E8E9800A1AAAF /* ExerciseStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseStartView.swift; sourceTree = "<group>"; };
+		B53EA5392B4E9AA500A1AAAF /* FlashCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardView.swift; sourceTree = "<group>"; };
+		B53EA53B2B4EA7CE00A1AAAF /* LearningProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningProgressView.swift; sourceTree = "<group>"; };
+		B53EA53D2B4EB1C700A1AAAF /* FlashCardChoiceButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardChoiceButtonView.swift; sourceTree = "<group>"; };
+		B53EA53F2B4ED19A00A1AAAF /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		B53EA5412B4ED75A00A1AAAF /* QuizChoiceButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizChoiceButtonView.swift; sourceTree = "<group>"; };
+		B53EA5432B4F971300A1AAAF /* ResultSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSheetView.swift; sourceTree = "<group>"; };
+		B53EA5452B4F994100A1AAAF /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		B53EA5472B4FE60D00A1AAAF /* ChapterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterListView.swift; sourceTree = "<group>"; };
+		B53EA5492B4FE8DC00A1AAAF /* LevelSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSheetView.swift; sourceTree = "<group>"; };
+		B53EA54B2B4FE91100A1AAAF /* BorderButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButtonView.swift; sourceTree = "<group>"; };
+		B53EA54D2B4FF47500A1AAAF /* DottedLineShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DottedLineShape.swift; sourceTree = "<group>"; };
+		B53EA54F2B4FF7DF00A1AAAF /* ChapterItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterItemView.swift; sourceTree = "<group>"; };
+		B53EA5512B50259600A1AAAF /* LearnVocabularyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnVocabularyView.swift; sourceTree = "<group>"; };
+		B53EA5532B50E7E300A1AAAF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B53EA5552B50EDC800A1AAAF /* IconTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTextFieldView.swift; sourceTree = "<group>"; };
+		B55E8A9A2B517747004DB0D1 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		B55E8A9C2B518046004DB0D1 /* result_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = result_animation.json; sourceTree = "<group>"; };
+		B55E8A9D2B518047004DB0D1 /* confetti_effect.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = confetti_effect.json; sourceTree = "<group>"; };
+		B55E8AA32B518477004DB0D1 /* WordsPhoneticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsPhoneticsView.swift; sourceTree = "<group>"; };
 		B56E1D122B466FBB00EFF481 /* BritWord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BritWord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56E1D152B466FBB00EFF481 /* BritWordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BritWordApp.swift; sourceTree = "<group>"; };
-		B56E1D172B466FBB00EFF481 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B56E1D172B466FBB00EFF481 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		B56E1D192B466FBD00EFF481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B56E1D1C2B466FBD00EFF481 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B56E1D282B46C5FE00EFF481 /* splashAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splashAnimation.json; sourceTree = "<group>"; };
+		B56E1D2A2B46C63D00EFF481 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		B56E1D2C2B46C90C00EFF481 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B56E1D2E2B46EFD800EFF481 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		B56E1D302B46F02800EFF481 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B56E1D322B46F5C400EFF481 /* notos_extra.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = notos_extra.ttf; sourceTree = "<group>"; };
+		B56E1D332B46F5C400EFF481 /* baloo2_medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = baloo2_medium.ttf; sourceTree = "<group>"; };
+		B56E1D342B46F5C400EFF481 /* baloo2_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = baloo2_regular.ttf; sourceTree = "<group>"; };
+		B56E1D352B46F5C400EFF481 /* baloo2_semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = baloo2_semibold.ttf; sourceTree = "<group>"; };
+		B56E1D362B46F5C400EFF481 /* noto_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = noto_regular.ttf; sourceTree = "<group>"; };
+		B56E1D372B46F5C400EFF481 /* baloo2_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = baloo2_bold.ttf; sourceTree = "<group>"; };
+		B56E1D3F2B46F5EB00EFF481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B56E1D402B46F65600EFF481 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		B56E1D422B46F79A00EFF481 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		B56E1D442B47135B00EFF481 /* WordOfTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayView.swift; sourceTree = "<group>"; };
+		B56E1D482B47147E00EFF481 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		B56E1D4A2B4716A500EFF481 /* RoundedCustomShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCustomShape.swift; sourceTree = "<group>"; };
+		B56E1D4C2B47B0CB00EFF481 /* CoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesView.swift; sourceTree = "<group>"; };
+		B56E1D4E2B47D59400EFF481 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B56E1D502B4840AC00EFF481 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		CF0E043BA2AD936F6CB43920 /* Pods_BritWord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BritWord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +141,144 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2108868F5099B7354524BD1C /* Pods_BritWord.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6FE0073E162DC5289D150EA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				015C2FE97783EA357F6E4C45 /* Pods-BritWord.debug.xcconfig */,
+				06F15661BCD62B74D63058B4 /* Pods-BritWord.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B53EA5212B4D361100A1AAAF /* DifferentWords */ = {
+			isa = PBXGroup;
+			children = (
+				B53EA5192B4C34A100A1AAAF /* DifferentWordsView.swift */,
+				B53EA51D2B4C58F300A1AAAF /* DifferentWordTextView.swift */,
+			);
+			path = DifferentWords;
+			sourceTree = "<group>";
+		};
+		B53EA5282B4E491F00A1AAAF /* Phonetics */ = {
+			isa = PBXGroup;
+			children = (
+				B53EA5292B4E637300A1AAAF /* PhoneticsListView.swift */,
+				B53EA5262B4E48D500A1AAAF /* PhoneticsView.swift */,
+				B50258AB2B52A7520031C3A1 /* PhoneticsDetailView.swift */,
+				B50258AD2B52C2DF0031C3A1 /* PhoneticsSymbolView.swift */,
+				B50258AF2B52C45C0031C3A1 /* PhoneticsExampleView.swift */,
+			);
+			path = Phonetics;
+			sourceTree = "<group>";
+		};
+		B53EA52B2B4E675300A1AAAF /* Listening */ = {
+			isa = PBXGroup;
+			children = (
+				B53EA5222B4D363100A1AAAF /* ListeningListsView.swift */,
+				B53EA5242B4D3B7600A1AAAF /* ListeningItemView.swift */,
+				B50258A72B52794C0031C3A1 /* ListeningDetailView.swift */,
+			);
+			path = Listening;
+			sourceTree = "<group>";
+		};
+		B53EA5342B4E97C500A1AAAF /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				B53EA52C2B4E676A00A1AAAF /* TestStartView.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		B53EA5352B4E97CC00A1AAAF /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				B53EA52E2B4E8E7700A1AAAF /* QuizStartView.swift */,
+				B53EA53F2B4ED19A00A1AAAF /* QuizView.swift */,
+				B53EA5412B4ED75A00A1AAAF /* QuizChoiceButtonView.swift */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		B53EA5362B4E97D300A1AAAF /* FlashCard */ = {
+			isa = PBXGroup;
+			children = (
+				B53EA5302B4E8E8200A1AAAF /* FlashCardStartView.swift */,
+				B53EA5392B4E9AA500A1AAAF /* FlashCardView.swift */,
+				B53EA53D2B4EB1C700A1AAAF /* FlashCardChoiceButtonView.swift */,
+			);
+			path = FlashCard;
+			sourceTree = "<group>";
+		};
+		B53EA5372B4E97E100A1AAAF /* Exercises */ = {
+			isa = PBXGroup;
+			children = (
+				B53EA5342B4E97C500A1AAAF /* Test */,
+				B53EA5352B4E97CC00A1AAAF /* Quiz */,
+				B53EA5362B4E97D300A1AAAF /* FlashCard */,
+			);
+			path = Exercises;
+			sourceTree = "<group>";
+		};
+		B53EA5382B4E97FE00A1AAAF /* Courses */ = {
+			isa = PBXGroup;
+			children = (
+				B55E8AA02B5181F9004DB0D1 /* Vocabulary */,
+				B53EA5212B4D361100A1AAAF /* DifferentWords */,
+				B53EA52B2B4E675300A1AAAF /* Listening */,
+				B53EA5282B4E491F00A1AAAF /* Phonetics */,
+			);
+			path = Courses;
+			sourceTree = "<group>";
+		};
+		B55E8AA02B5181F9004DB0D1 /* Vocabulary */ = {
+			isa = PBXGroup;
+			children = (
+				B53EA5472B4FE60D00A1AAAF /* ChapterListView.swift */,
+				B53EA5492B4FE8DC00A1AAAF /* LevelSheetView.swift */,
+				B53EA54F2B4FF7DF00A1AAAF /* ChapterItemView.swift */,
+				B53EA5512B50259600A1AAAF /* LearnVocabularyView.swift */,
+				B55E8AA32B518477004DB0D1 /* WordsPhoneticsView.swift */,
+			);
+			path = Vocabulary;
+			sourceTree = "<group>";
+		};
+		B55E8AA12B51820C004DB0D1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B53EA5532B50E7E300A1AAAF /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B55E8AA22B518256004DB0D1 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				B53EA51B2B4C38AA00A1AAAF /* NavigationHeaderView.swift */,
+				B53EA5322B4E8E9800A1AAAF /* ExerciseStartView.swift */,
+				B53EA53B2B4EA7CE00A1AAAF /* LearningProgressView.swift */,
+				B53EA5432B4F971300A1AAAF /* ResultSheetView.swift */,
+				B53EA5452B4F994100A1AAAF /* ButtonView.swift */,
+				B53EA54B2B4FE91100A1AAAF /* BorderButtonView.swift */,
+				B55E8A9A2B517747004DB0D1 /* ResultView.swift */,
+				B50258A92B52A3930031C3A1 /* SimpleNavigationHeaderView.swift */,
+			);
+			path = "Custom View";
+			sourceTree = "<group>";
+		};
 		B56E1D092B466FBB00EFF481 = {
 			isa = PBXGroup;
 			children = (
 				B56E1D142B466FBB00EFF481 /* BritWord */,
 				B56E1D132B466FBB00EFF481 /* Products */,
+				6FE0073E162DC5289D150EA0 /* Pods */,
+				D4DD10159345ACD1B2AC04A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +293,14 @@
 		B56E1D142B466FBB00EFF481 /* BritWord */ = {
 			isa = PBXGroup;
 			children = (
+				B56E1D3F2B46F5EB00EFF481 /* Info.plist */,
+				B56E1D3E2B46F5C800EFF481 /* Fonts */,
+				B56E1D272B46C5F500EFF481 /* Animations */,
+				B56E1D262B46871800EFF481 /* Utilities */,
+				B56E1D252B46871100EFF481 /* Model */,
+				B56E1D242B46870A00EFF481 /* ViewModel */,
+				B56E1D232B4686FE00EFF481 /* View */,
 				B56E1D152B466FBB00EFF481 /* BritWordApp.swift */,
-				B56E1D172B466FBB00EFF481 /* ContentView.swift */,
 				B56E1D192B466FBD00EFF481 /* Assets.xcassets */,
 				B56E1D1B2B466FBD00EFF481 /* Preview Content */,
 			);
@@ -67,6 +315,101 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B56E1D232B4686FE00EFF481 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B55E8AA12B51820C004DB0D1 /* Login */,
+				B56E1D532B49534F00EFF481 /* Splash */,
+				B56E1D522B49534500EFF481 /* Home */,
+				B53EA5382B4E97FE00A1AAAF /* Courses */,
+				B53EA5372B4E97E100A1AAAF /* Exercises */,
+				B55E8AA22B518256004DB0D1 /* Custom View */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B56E1D242B46870A00EFF481 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B56E1D252B46871100EFF481 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B53EA51F2B4CFB9800A1AAAF /* HomeCoursesDestination.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B56E1D262B46871800EFF481 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B56E1D302B46F02800EFF481 /* Constants.swift */,
+				B56E1D2A2B46C63D00EFF481 /* LottieView.swift */,
+				B56E1D402B46F65600EFF481 /* Colors.swift */,
+				B56E1D422B46F79A00EFF481 /* Fonts.swift */,
+				B56E1D482B47147E00EFF481 /* Modifiers.swift */,
+				B56E1D4A2B4716A500EFF481 /* RoundedCustomShape.swift */,
+				B53EA54D2B4FF47500A1AAAF /* DottedLineShape.swift */,
+				B53EA5552B50EDC800A1AAAF /* IconTextFieldView.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B56E1D272B46C5F500EFF481 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				B55E8A9D2B518047004DB0D1 /* confetti_effect.json */,
+				B55E8A9C2B518046004DB0D1 /* result_animation.json */,
+				B56E1D282B46C5FE00EFF481 /* splashAnimation.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		B56E1D3E2B46F5C800EFF481 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B56E1D372B46F5C400EFF481 /* baloo2_bold.ttf */,
+				B56E1D332B46F5C400EFF481 /* baloo2_medium.ttf */,
+				B56E1D342B46F5C400EFF481 /* baloo2_regular.ttf */,
+				B56E1D352B46F5C400EFF481 /* baloo2_semibold.ttf */,
+				B56E1D362B46F5C400EFF481 /* noto_regular.ttf */,
+				B56E1D322B46F5C400EFF481 /* notos_extra.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B56E1D522B49534500EFF481 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B56E1D2C2B46C90C00EFF481 /* HomeView.swift */,
+				B56E1D442B47135B00EFF481 /* WordOfTheDayView.swift */,
+				B56E1D4C2B47B0CB00EFF481 /* CoursesView.swift */,
+				B56E1D4E2B47D59400EFF481 /* ProfileView.swift */,
+				B56E1D502B4840AC00EFF481 /* ExerciseView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B56E1D532B49534F00EFF481 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				B56E1D172B466FBB00EFF481 /* SplashView.swift */,
+				B56E1D2E2B46EFD800EFF481 /* LogoView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		D4DD10159345ACD1B2AC04A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF0E043BA2AD936F6CB43920 /* Pods_BritWord.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +417,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B56E1D202B466FBD00EFF481 /* Build configuration list for PBXNativeTarget "BritWord" */;
 			buildPhases = (
+				AC1B5E00C9C57A5813FF6217 /* [CP] Check Pods Manifest.lock */,
 				B56E1D0E2B466FBB00EFF481 /* Sources */,
 				B56E1D0F2B466FBB00EFF481 /* Frameworks */,
 				B56E1D102B466FBB00EFF481 /* Resources */,
+				B230A5AB474533CBB8C3A6A1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,20 +470,117 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56E1D392B46F5C400EFF481 /* baloo2_medium.ttf in Resources */,
+				B55E8A9F2B518047004DB0D1 /* confetti_effect.json in Resources */,
+				B55E8A9E2B518047004DB0D1 /* result_animation.json in Resources */,
 				B56E1D1D2B466FBD00EFF481 /* Preview Assets.xcassets in Resources */,
+				B56E1D382B46F5C400EFF481 /* notos_extra.ttf in Resources */,
 				B56E1D1A2B466FBD00EFF481 /* Assets.xcassets in Resources */,
+				B56E1D3B2B46F5C400EFF481 /* baloo2_semibold.ttf in Resources */,
+				B56E1D3D2B46F5C400EFF481 /* baloo2_bold.ttf in Resources */,
+				B56E1D3C2B46F5C400EFF481 /* noto_regular.ttf in Resources */,
+				B56E1D3A2B46F5C400EFF481 /* baloo2_regular.ttf in Resources */,
+				B56E1D292B46C5FE00EFF481 /* splashAnimation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AC1B5E00C9C57A5813FF6217 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BritWord-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B230A5AB474533CBB8C3A6A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BritWord/Pods-BritWord-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BritWord/Pods-BritWord-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BritWord/Pods-BritWord-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B56E1D0E2B466FBB00EFF481 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B56E1D182B466FBB00EFF481 /* ContentView.swift in Sources */,
+				B56E1D432B46F79A00EFF481 /* Fonts.swift in Sources */,
+				B53EA5332B4E8E9800A1AAAF /* ExerciseStartView.swift in Sources */,
+				B53EA5202B4CFB9800A1AAAF /* HomeCoursesDestination.swift in Sources */,
+				B53EA5442B4F971300A1AAAF /* ResultSheetView.swift in Sources */,
+				B53EA53A2B4E9AA500A1AAAF /* FlashCardView.swift in Sources */,
+				B55E8A9B2B517747004DB0D1 /* ResultView.swift in Sources */,
+				B53EA5502B4FF7DF00A1AAAF /* ChapterItemView.swift in Sources */,
+				B53EA5562B50EDC800A1AAAF /* IconTextFieldView.swift in Sources */,
+				B56E1D4F2B47D59400EFF481 /* ProfileView.swift in Sources */,
+				B50258AC2B52A7520031C3A1 /* PhoneticsDetailView.swift in Sources */,
+				B53EA5522B50259600A1AAAF /* LearnVocabularyView.swift in Sources */,
+				B56E1D492B47147E00EFF481 /* Modifiers.swift in Sources */,
+				B53EA5232B4D363100A1AAAF /* ListeningListsView.swift in Sources */,
+				B53EA52F2B4E8E7700A1AAAF /* QuizStartView.swift in Sources */,
+				B55E8AA42B518477004DB0D1 /* WordsPhoneticsView.swift in Sources */,
+				B53EA5272B4E48D500A1AAAF /* PhoneticsView.swift in Sources */,
+				B53EA5252B4D3B7600A1AAAF /* ListeningItemView.swift in Sources */,
+				B53EA51E2B4C58F300A1AAAF /* DifferentWordTextView.swift in Sources */,
+				B56E1D4B2B4716A500EFF481 /* RoundedCustomShape.swift in Sources */,
+				B56E1D2F2B46EFD800EFF481 /* LogoView.swift in Sources */,
+				B50258AE2B52C2DF0031C3A1 /* PhoneticsSymbolView.swift in Sources */,
+				B50258A82B52794C0031C3A1 /* ListeningDetailView.swift in Sources */,
+				B56E1D182B466FBB00EFF481 /* SplashView.swift in Sources */,
+				B56E1D2D2B46C90C00EFF481 /* HomeView.swift in Sources */,
+				B53EA53E2B4EB1C700A1AAAF /* FlashCardChoiceButtonView.swift in Sources */,
+				B50258B02B52C45C0031C3A1 /* PhoneticsExampleView.swift in Sources */,
+				B53EA5462B4F994100A1AAAF /* ButtonView.swift in Sources */,
+				B53EA5312B4E8E8200A1AAAF /* FlashCardStartView.swift in Sources */,
+				B53EA5402B4ED19A00A1AAAF /* QuizView.swift in Sources */,
+				B53EA51A2B4C34A100A1AAAF /* DifferentWordsView.swift in Sources */,
+				B56E1D452B47135B00EFF481 /* WordOfTheDayView.swift in Sources */,
+				B53EA51C2B4C38AA00A1AAAF /* NavigationHeaderView.swift in Sources */,
+				B56E1D412B46F65600EFF481 /* Colors.swift in Sources */,
 				B56E1D162B466FBB00EFF481 /* BritWordApp.swift in Sources */,
+				B53EA54A2B4FE8DC00A1AAAF /* LevelSheetView.swift in Sources */,
+				B56E1D2B2B46C63D00EFF481 /* LottieView.swift in Sources */,
+				B56E1D312B46F02800EFF481 /* Constants.swift in Sources */,
+				B53EA52D2B4E676A00A1AAAF /* TestStartView.swift in Sources */,
+				B56E1D512B4840AC00EFF481 /* ExerciseView.swift in Sources */,
+				B53EA53C2B4EA7CE00A1AAAF /* LearningProgressView.swift in Sources */,
+				B50258AA2B52A3930031C3A1 /* SimpleNavigationHeaderView.swift in Sources */,
+				B53EA5482B4FE60D00A1AAAF /* ChapterListView.swift in Sources */,
+				B53EA54E2B4FF47500A1AAAF /* DottedLineShape.swift in Sources */,
+				B53EA52A2B4E637300A1AAAF /* PhoneticsListView.swift in Sources */,
+				B53EA5422B4ED75A00A1AAAF /* QuizChoiceButtonView.swift in Sources */,
+				B53EA54C2B4FE91100A1AAAF /* BorderButtonView.swift in Sources */,
+				B53EA5542B50E7E300A1AAAF /* LoginView.swift in Sources */,
+				B56E1D4D2B47B0CB00EFF481 /* CoursesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,7 +624,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -197,7 +639,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -245,7 +687,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -254,7 +696,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -266,6 +708,7 @@
 		};
 		B56E1D212B466FBD00EFF481 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 015C2FE97783EA357F6E4C45 /* Pods-BritWord.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -275,6 +718,7 @@
 				DEVELOPMENT_TEAM = 2RBYXPYV8Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BritWord/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,6 +739,7 @@
 		};
 		B56E1D222B466FBD00EFF481 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06F15661BCD62B74D63058B4 /* Pods-BritWord.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -304,6 +749,7 @@
 				DEVELOPMENT_TEAM = 2RBYXPYV8Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BritWord/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

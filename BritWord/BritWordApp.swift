@@ -11,7 +11,7 @@ import SwiftUI
 struct BritWordApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashView()
         }
     }
 }
