@@ -7,7 +7,11 @@
 
 import SwiftUI
 
+<<<<<<< HEAD
 struct TestStartView: View {
+=======
+struct TestView: View {
+>>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92
     
     var body: some View {
         
@@ -31,6 +35,7 @@ struct TestStartView: View {
                     imageName: "test",
                     color: vocabularyColor)
                 
+<<<<<<< HEAD
                 // MARK: - START BUTTON
                 Button(action: {
                     
@@ -41,6 +46,8 @@ struct TestStartView: View {
                 })
                 .buttonStyle(tapBounceButtonStyle())
                 
+=======
+>>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92
                 Spacer()
                 
             }
@@ -51,5 +58,9 @@ struct TestStartView: View {
 }
 
 #Preview {
+<<<<<<< HEAD
     TestStartView()
+=======
+    TestView()
+>>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92
 }

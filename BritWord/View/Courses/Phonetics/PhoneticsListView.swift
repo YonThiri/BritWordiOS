@@ -12,7 +12,10 @@ struct PhoneticsListView: View {
     // MARK: - PROPERTIES
     var title : String
     var columns : [GridItem] = Array(repeating: .init(.flexible(), spacing: 5), count: 5)
+<<<<<<< HEAD
     @State private var phoneticsDetailSheet : Bool = false
+=======
+>>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92
     
     var body: some View {
         
@@ -21,7 +24,10 @@ struct PhoneticsListView: View {
             // MARK: - TITLE
             Text(title)
                 .font(subTitle)
+<<<<<<< HEAD
                 .foregroundStyle(whiteColor)
+=======
+>>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92
                 .frame(maxWidth: .infinity)
                 .frame(height: 45)
                 .background(
@@ -44,17 +50,23 @@ struct PhoneticsListView: View {
                                 RoundedRectangle(cornerRadius: 15)
                                     .fill(phoneticsBgColor)
                             )
+<<<<<<< HEAD
                             .onTapGesture {
                                 phoneticsDetailSheet.toggle()
                             }
+=======
+>>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92
                         
                     }//: LOOP
                     
                 
             })//: LAZY GRID
+<<<<<<< HEAD
             .fullScreenCover(isPresented: $phoneticsDetailSheet, content: {
                 PhoneticsDetailview()
             })
+=======
+>>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92
         }
     }
 }

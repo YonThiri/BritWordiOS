@@ -41,7 +41,11 @@ struct LogoView : View {
         .overlay(alignment: .bottom) {
             
             ProgressView()
+<<<<<<< HEAD
                 .scaleEffect(1.5)
+=======
+                .scaleEffect(2.0)
+>>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92
                 .opacity(isShowLoading ? 1 : 0)
                 .progressViewStyle(.circular)
                 .tint(.white)

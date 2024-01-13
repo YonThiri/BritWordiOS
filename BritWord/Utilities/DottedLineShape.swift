@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+<<<<<<< HEAD
 struct DottedLineShape: Shape {
     
     let stratPoint: Alignment
@@ -46,4 +47,14 @@ struct DottedLineShape: Shape {
             }
             
         }
+=======
+struct DottedLineShape: View {
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    }
+}
+
+#Preview {
+    DottedLineShape()
+>>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92
 }

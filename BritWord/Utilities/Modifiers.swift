@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+<<<<<<< HEAD
 struct ShadowViewModifier : ViewModifier {
     func body(content: Content) -> some View {
         content
@@ -41,4 +42,14 @@ struct CustomProgressViewStyle: ProgressViewStyle {
           .scaleEffect(x: 1, y: 2, anchor: .center)
           
   }
+=======
+struct Modifiers: View {
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    }
+}
+
+#Preview {
+    Modifiers()
+>>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92
 }

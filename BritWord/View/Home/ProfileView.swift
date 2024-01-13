@@ -12,7 +12,11 @@ struct ProfileView: View {
         HStack {
             VStack(alignment: .leading) {
                 Text("Welcome")
+<<<<<<< HEAD
                     .font(descriptionText)
+=======
+                    .font(bodyText)
+>>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92
                     .foregroundStyle(grayColor)
                 
                 

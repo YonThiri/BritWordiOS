@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ListeningDetailView: View {
+<<<<<<< HEAD
     
     // MARK: - PROPERTIES
     @State private var progress: Double = 0
@@ -81,6 +82,10 @@ struct ListeningDetailView: View {
         
         .ignoresSafeArea()
         
+=======
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+>>>>>>> 4a42fd8cb645f2c87fa23c3968db331fe7d00a92
     }
 }
 
