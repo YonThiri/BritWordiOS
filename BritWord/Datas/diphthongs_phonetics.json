@@ -1,0 +1,264 @@
+{
+
+  "phoneticsList" : [
+
+    {
+      "id" : 1,
+      "word" : "eɪ",
+      "description" : "Diphthong",
+      "explanation" : "To practice, you can try saying words that contain the \"eɪ\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "day",
+          "word" : "day",
+          "phoneticsSymbol" : "/deɪ/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "say",
+          "word" : "say",
+          "phoneticsSymbol" : "/seɪ/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "way",
+          "word" : "way",
+          "phoneticsSymbol" : "/weɪ/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 2,
+      "word" : "aɪ",
+      "description" : "Diphthong",
+      "explanation" : "To practice, you can try saying words that contain the \"aɪ\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "high",
+          "word" : "high",
+          "phoneticsSymbol" : "/haɪ/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "sky",
+          "word" : "sky",
+          "phoneticsSymbol" : "/skaɪ/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "buy",
+          "word" : "buy",
+          "phoneticsSymbol" : "/baɪ/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 3,
+      "word" : "ɔɪ",
+      "description" : "Diphthong",
+      "explanation" : "To practice, you can try saying words that contain the \"ɔɪ\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "boy",
+          "word" : "boy",
+          "phoneticsSymbol" : "/bɔɪ/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "toy",
+          "word" : "toy",
+          "phoneticsSymbol" : "/tɔɪ/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "noise",
+          "word" : "noise",
+          "phoneticsSymbol" : "/nɔɪz/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 4,
+      "word" : "aʊ",
+      "description" : "Diphthong",
+      "explanation" : "To practice, you can try saying words that contain the \"aʊ\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "cow",
+          "word" : "cow",
+          "phoneticsSymbol" : "/kaʊ/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "how",
+          "word" : "how",
+          "phoneticsSymbol" : "/haʊ/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "now",
+          "word" : "now",
+          "phoneticsSymbol" : "/naʊ/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 5,
+      "word" : "əʊ",
+      "description" : "Diphthong",
+      "explanation" : "To practice, you can try saying words that contain the \"əʊ\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "go",
+          "word" : "go",
+          "phoneticsSymbol" : "/ɡəʊ/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "slow",
+          "word" : "slow",
+          "phoneticsSymbol" : "/sləʊ/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "know",
+          "word" : "know",
+          "phoneticsSymbol" : "/nəʊ/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 6,
+      "word" : "ɪə",
+      "description" : "Diphthong",
+      "explanation" : "To practice, you can try saying words that contain the \"ɪə\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "here",
+          "word" : "here",
+          "phoneticsSymbol" : "/hɪər/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "peer",
+          "word" : "peer",
+          "phoneticsSymbol" : "/pɪər/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "cheer",
+          "word" : "cheer",
+          "phoneticsSymbol" : "/tʃɪər/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 7,
+      "word" : "eə",
+      "description" : "Diphthong",
+      "explanation" : "To practice, you can try saying words that contain the \"eə\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "air",
+          "word" : "air",
+          "phoneticsSymbol" : "/eər/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "fair",
+          "word" : "fair",
+          "phoneticsSymbol" : "/feər/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "care",
+          "word" : "care",
+          "phoneticsSymbol" : "/keər/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 8,
+      "word" : "ʊə",
+      "description" : "Diphthong",
+      "explanation" : "To practice, you can try saying words that contain the \"ʊə\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "tour",
+          "word" : "tour",
+          "phoneticsSymbol" : "/tʊər/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "tourist",
+          "word" : "tourist",
+          "phoneticsSymbol" : "/ˈtʊərɪst/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "plural",
+          "word" : "plural",
+          "phoneticsSymbol" : "/ˈplʊərəl/"
+
+        }
+
+      ]
+    }
+  ]
+}
+
+

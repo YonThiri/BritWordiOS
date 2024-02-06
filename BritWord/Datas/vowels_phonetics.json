@@ -1,0 +1,392 @@
+{
+
+  "phoneticsList" : [
+
+    {
+      "id" : 1,
+      "word" : "iː",
+      "description" : "long vowel",
+      "explanation" : "To practice, you can try saying words that contain the \"iː\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "see",
+          "word" : "see",
+          "phoneticsSymbol" : "/siː/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "tree",
+          "word" : "tree",
+          "phoneticsSymbol" : "/triː/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "me",
+          "word" : "me",
+          "phoneticsSymbol" : "/miː/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 2,
+      "word" : "ɪ",
+      "description" : "short vowel",
+      "explanation" : "To practice, you can try saying words that contain the \"ɪ\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "bit",
+          "word" : "bit",
+          "phoneticsSymbol" : "/bɪt/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "sit",
+          "word" : "sit",
+          "phoneticsSymbol" : "/sɪt/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "miss",
+          "word" : "miss",
+          "phoneticsSymbol" : "/mɪs/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 3,
+      "word" : "e",
+      "description" : "short vowel",
+      "explanation" : "To practice, you can try saying words that contain the \"e\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "bet",
+          "word" : "bet",
+          "phoneticsSymbol" : "/bet/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "set",
+          "word" : "set",
+          "phoneticsSymbol" : "/set/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "red",
+          "word" : "red",
+          "phoneticsSymbol" : "/red/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 4,
+      "word" : "æ",
+      "description" : "short vowel",
+      "explanation" : "To practice, you can try saying words that contain the \"æ\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "cat",
+          "word" : "cat",
+          "phoneticsSymbol" : "/kæt/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "bat",
+          "word" : "bat",
+          "phoneticsSymbol" : "/bæt/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "hat",
+          "word" : "hat",
+          "phoneticsSymbol" : "/hæt/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 5,
+      "word" : "ɒ",
+      "description" : "short vowel",
+      "explanation" : "To practice, you can try saying words that contain the \"ɒ\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "dog",
+          "word" : "dog",
+          "phoneticsSymbol" : "/dɒg/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "log",
+          "word" : "log",
+          "phoneticsSymbol" : "/lɒg/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "hot",
+          "word" : "hot",
+          "phoneticsSymbol" : "/hɒt/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 6,
+      "word" : "ʌ",
+      "description" : "short vowel",
+      "explanation" : "To practice, you can try saying words that contain the \"ʌ\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "cup",
+          "word" : "cup",
+          "phoneticsSymbol" : "/kʌp/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "up",
+          "word" : "up",
+          "phoneticsSymbol" : "/ʌp/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "luck",
+          "word" : "luck",
+          "phoneticsSymbol" : "/lʌk/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 7,
+      "word" : "ɑː",
+      "description" : "long vowel",
+      "explanation" : "To practice, you can try saying words that contain the \"ɑː\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "car",
+          "word" : "car",
+          "phoneticsSymbol" : "/kɑː/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "star",
+          "word" : "star",
+          "phoneticsSymbol" : "/stɑː/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "far",
+          "word" : "far",
+          "phoneticsSymbol" : "/fɑː/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 8,
+      "word" : "ɔː",
+      "description" : "long vowel",
+      "explanation" : "To practice, you can try saying words that contain the \"ɔː\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "thought",
+          "word" : "thought",
+          "phoneticsSymbol" : "/θɔːt/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "law",
+          "word" : "law",
+          "phoneticsSymbol" : "/lɔː/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "all",
+          "word" : "all",
+          "phoneticsSymbol" : "/ɔːl/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 9,
+      "word" : "ʊ",
+      "description" : "short vowel",
+      "explanation" : "To practice, you can try saying words that contain the \"ʊ\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "put",
+          "word" : "put",
+          "phoneticsSymbol" : "/pʊt/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "foot",
+          "word" : "foot",
+          "phoneticsSymbol" : "/fʊt/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "look",
+          "word" : "look",
+          "phoneticsSymbol" : "/lʊk/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 10,
+      "word" : "uː",
+      "description" : "long vowel",
+      "explanation" : "To practice, you can try saying words that contain the \"uː\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "boot",
+          "word" : "boot",
+          "phoneticsSymbol" : "/buːt/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "moon",
+          "word" : "moon",
+          "phoneticsSymbol" : "/muːn/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "soon",
+          "word" : "soon",
+          "phoneticsSymbol" : "/suːn/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 11,
+      "word" : "ə",
+      "description" : "vowel",
+      "explanation" : "To practice, you can try saying words that contain the \"ə\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "away",
+          "word" : "away",
+          "phoneticsSymbol" : "/əˈweɪ/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "common",
+          "word" : "common",
+          "phoneticsSymbol" : "/kɒmən/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "water",
+          "word" : "water",
+          "phoneticsSymbol" : "/wɔː.tər/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 12,
+      "word" : "ɜː",
+      "description" : "long vowel",
+      "explanation" : "To practice, you can try saying words that contain the \"ɜː\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "bird",
+          "word" : "bird",
+          "phoneticsSymbol" : "/bɜːd/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "learn",
+          "word" : "learn",
+          "phoneticsSymbol" : "/lɜːn/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "heard",
+          "word" : "heard",
+          "phoneticsSymbol" : "/hɜːd/"
+
+        }
+
+      ]
+    }
+  ]
+}
+
+

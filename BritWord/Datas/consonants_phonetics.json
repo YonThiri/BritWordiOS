@@ -1,0 +1,776 @@
+{
+
+  "phoneticsList" : [
+
+    {
+      "id" : 1,
+      "word" : "p",
+      "description" : "Unvoiced",
+      "explanation" : "To practice, you can try saying words that contain the \"p\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "pat",
+          "word" : "pat",
+          "phoneticsSymbol" : "/pæt/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "pot",
+          "word" : "pot",
+          "phoneticsSymbol" : "/pɒt/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "prince",
+          "word" : "prince",
+          "phoneticsSymbol" : "/prɪns/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 2,
+      "word" : "t",
+      "description" : "Unvoiced",
+      "explanation" : "To practice, you can try saying words that contain the \"t\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "top",
+          "word" : "top",
+          "phoneticsSymbol" : "/tɒp/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "bat",
+          "word" : "bat",
+          "phoneticsSymbol" : "/bæt/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "sit",
+          "word" : "sit",
+          "phoneticsSymbol" : "/sɪt/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 3,
+      "word" : "k",
+      "description" : "Unvoiced",
+      "explanation" : "To practice, you can try saying words that contain the \"k\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "cat",
+          "word" : "cat",
+          "phoneticsSymbol" : "/kæt/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "kite",
+          "word" : "kite",
+          "phoneticsSymbol" : "/kaɪt/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "back",
+          "word" : "back",
+          "phoneticsSymbol" : "/bæk/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 4,
+      "word" : "b",
+      "description" : "Voiced",
+      "explanation" : "To practice, you can try saying words that contain the \"b\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "bat2",
+          "word" : "bat",
+          "phoneticsSymbol" : "/bæt/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "big",
+          "word" : "big",
+          "phoneticsSymbol" : "/bɪɡ/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "cab",
+          "word" : "cab",
+          "phoneticsSymbol" : "/kæb/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 5,
+      "word" : "d",
+      "description" : "Voiced",
+      "explanation" : "To practice, you can try saying words that contain the \"d\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "dog",
+          "word" : "dog",
+          "phoneticsSymbol" : "/dɒɡ/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "bed",
+          "word" : "bed",
+          "phoneticsSymbol" : "/bed/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "red",
+          "word" : "red",
+          "phoneticsSymbol" : "/red/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 6,
+      "word" : "g",
+      "description" : "Voiced",
+      "explanation" : "To practice, you can try saying words that contain the \"g\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "go",
+          "word" : "go",
+          "phoneticsSymbol" : "/ɡəʊ/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "big2",
+          "word" : "big",
+          "phoneticsSymbol" : "/bɪɡ/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "bag",
+          "word" : "bag",
+          "phoneticsSymbol" : "/bæɡ/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 7,
+      "word" : "f",
+      "description" : "Unvoiced",
+      "explanation" : "To practice, you can try saying words that contain the \"f\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "fun",
+          "word" : "fun",
+          "phoneticsSymbol" : "/fʌn/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "fine",
+          "word" : "fine",
+          "phoneticsSymbol" : "/faɪn/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "phone",
+          "word" : "phone",
+          "phoneticsSymbol" : "/fəʊn/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 8,
+      "word" : "v",
+      "description" : "Voiced",
+      "explanation" : "To practice, you can try saying words that contain the \"v\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "vat",
+          "word" : "vat",
+          "phoneticsSymbol" : "/væt/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "van",
+          "word" : "van",
+          "phoneticsSymbol" : "/væn/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "love",
+          "word" : "love",
+          "phoneticsSymbol" : "/lʌv/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 9,
+      "word" : "s",
+      "description" : "Unvoiced",
+      "explanation" : "To practice, you can try saying words that contain the \"s\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "sun",
+          "word" : "sun",
+          "phoneticsSymbol" : "/sʌn/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "see",
+          "word" : "see",
+          "phoneticsSymbol" : "/siː/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "bus",
+          "word" : "bus",
+          "phoneticsSymbol" : "/bʌs/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 10,
+      "word" : "z",
+      "description" : "Voiced",
+      "explanation" : "To practice, you can try saying words that contain the \"z\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "zip",
+          "word" : "zip",
+          "phoneticsSymbol" : "/zɪp/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "zebra",
+          "word" : "zebra",
+          "phoneticsSymbol" : "/ˈziːbrə/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "zoo",
+          "word" : "zoo",
+          "phoneticsSymbol" : "/zuː/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 11,
+      "word" : "ʃ",
+      "description" : "Unvoiced",
+      "explanation" : "To practice, you can try saying words that contain the \"ʃ\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "ship",
+          "word" : "ship",
+          "phoneticsSymbol" : "/ʃɪp/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "shoe",
+          "word" : "shoe",
+          "phoneticsSymbol" : "/ʃuː/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "fish",
+          "word" : "fish",
+          "phoneticsSymbol" : "/fɪʃ/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 12,
+      "word" : "ʒ",
+      "description" : "Voiced",
+      "explanation" : "To practice, you can try saying words that contain the \"ʒ\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "usual",
+          "word" : "usual",
+          "phoneticsSymbol" : "/ˈjuːʒuəl/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "division",
+          "word" : "division",
+          "phoneticsSymbol" : "/dɪˈvɪʒən/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "vision",
+          "word" : "vision",
+          "phoneticsSymbol" : "/ˈvɪʒən/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 13,
+      "word" : "m",
+      "description" : "Voiced",
+      "explanation" : "To practice, you can try saying words that contain the \"m\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "man",
+          "word" : "man",
+          "phoneticsSymbol" : "/mæn/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "mother",
+          "word" : "mother",
+          "phoneticsSymbol" : "/ˈmʌðər/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "jump",
+          "word" : "jump",
+          "phoneticsSymbol" : "/dʒʌmp/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 14,
+      "word" : "n",
+      "description" : "Voiced",
+      "explanation" : "To practice, you can try saying words that contain the \"n\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "know",
+          "word" : "know",
+          "phoneticsSymbol" : "/nəʊ/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "name",
+          "word" : "name",
+          "phoneticsSymbol" : "/neɪm/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "net",
+          "word" : "net",
+          "phoneticsSymbol" : "/net/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 15,
+      "word" : "ŋ",
+      "description" : "Voiced",
+      "explanation" : "To practice, you can try saying words that contain the \"ŋ\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "sing",
+          "word" : "sing",
+          "phoneticsSymbol" : "/sɪŋ/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "ring",
+          "word" : "ring",
+          "phoneticsSymbol" : "/rɪŋ/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "song",
+          "word" : "song",
+          "phoneticsSymbol" : "/sɒŋ/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 16,
+      "word" : "l",
+      "description" : "Voiced",
+      "explanation" : "To practice, you can try saying words that contain the \"l\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "let",
+          "word" : "let",
+          "phoneticsSymbol" : "/let/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "like",
+          "word" : "like",
+          "phoneticsSymbol" : "/laɪk/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "love2",
+          "word" : "love",
+          "phoneticsSymbol" : "/lʌv/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 17,
+      "word" : "r",
+      "description" : "Voiced",
+      "explanation" : "To practice, you can try saying words that contain the \"r\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "red2",
+          "word" : "red",
+          "phoneticsSymbol" : "/red/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "run",
+          "word" : "run",
+          "phoneticsSymbol" : "/rʌn/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "carrot",
+          "word" : "carrot",
+          "phoneticsSymbol" : "/ˈkærət/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 18,
+      "word" : "w",
+      "description" : "Voiced",
+      "explanation" : "To practice, you can try saying words that contain the \"w\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "why",
+          "word" : "why",
+          "phoneticsSymbol" : "/waɪ/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "wind",
+          "word" : "wind",
+          "phoneticsSymbol" : "/wɪnd/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "swim",
+          "word" : "swim",
+          "phoneticsSymbol" : "/swɪm/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 19,
+      "word" : "j",
+      "description" : "Voiced",
+      "explanation" : "To practice, you can try saying words that contain the \"j\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "yes",
+          "word" : "yes",
+          "phoneticsSymbol" : "/jes/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "yacht",
+          "word" : "yacht",
+          "phoneticsSymbol" : "/jɒt/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "year",
+          "word" : "year",
+          "phoneticsSymbol" : "/jɪər/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 20,
+      "word" : "h",
+      "description" : "Unvoiced",
+      "explanation" : "To practice, you can try saying words that contain the \"h\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "hat",
+          "word" : "hat",
+          "phoneticsSymbol" : "/hæt/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "who",
+          "word" : "who",
+          "phoneticsSymbol" : "/huː/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "behind",
+          "word" : "behind",
+          "phoneticsSymbol" : "/bɪˈhaɪnd/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 21,
+      "word" : "ʧ",
+      "description" : "Unvoiced",
+      "explanation" : "To practice, you can try saying words that contain the \"ʧ\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "watch",
+          "word" : "watch",
+          "phoneticsSymbol" : "/wɒtʃ/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "catch",
+          "word" : "catch",
+          "phoneticsSymbol" : "/kætʃ/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "chin",
+          "word" : "chin",
+          "phoneticsSymbol" : "/tʃɪn/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 22,
+      "word" : "dʒ",
+      "description" : "Voiced",
+      "explanation" : "To practice, you can try saying words that contain the \"dʒ\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "age",
+          "word" : "age",
+          "phoneticsSymbol" : "/eɪdʒ/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "just",
+          "word" : "just",
+          "phoneticsSymbol" : "/dʒʌst/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "stage",
+          "word" : "stage",
+          "phoneticsSymbol" : "/steɪdʒ/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 23,
+      "word" : "θ",
+      "description" : "Unvoiced",
+      "explanation" : "To practice, you can try saying words that contain the \"θ\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "teeth",
+          "word" : "teeth",
+          "phoneticsSymbol" : "/tiːθ/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "thing",
+          "word" : "thing",
+          "phoneticsSymbol" : "/θɪŋ/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "bath",
+          "word" : "bath",
+          "phoneticsSymbol" : "/bæθ/"
+
+        }
+
+      ]
+    },
+    {
+      "id" : 24,
+      "word" : "ð",
+      "description" : "Voiced",
+      "explanation" : "To practice, you can try saying words that contain the \"ð\" sound, such as:",
+      "example" : [
+        {
+          "id" : 1,
+          "soundURL" : "they",
+          "word" : "they",
+          "phoneticsSymbol" : "/ðeɪ/"
+
+        },
+
+        {
+          "id" : 2,
+          "soundURL" : "this",
+          "word" : "this",
+          "phoneticsSymbol" : "/ðɪs/"
+
+        },
+
+        {
+          "id" : 3,
+          "soundURL" : "mother",
+          "word" : "mother",
+          "phoneticsSymbol" : "/ˈmʌðər/"
+
+        }
+
+      ]
+    }
+  ]
+}
+
+
