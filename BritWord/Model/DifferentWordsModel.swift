@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+struct DifferentWordModel : Codable, Identifiable {
+    
+    let id : Int
+    let us : String
+    let uk : String
+    let imageURL : String
+    let ukSoundURL : String
+    let usSoundURL : String
+}

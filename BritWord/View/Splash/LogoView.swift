@@ -14,8 +14,7 @@ struct LogoView : View {
     
     var body: some View {
         ZStack {
-            Rectangle()
-                .fill(.blue)
+            gradientColor
                 .ignoresSafeArea()
             
             LottieView(filename: "splashAnimation")
@@ -42,7 +41,7 @@ struct LogoView : View {
             
             ProgressView()
 
-                .scaleEffect(1.5)
+                .scaleEffect(1.2)
 
                 .opacity(isShowLoading ? 1 : 0)
                 .progressViewStyle(.circular)

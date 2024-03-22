@@ -7,6 +7,9 @@ target 'BritWord' do
 
 
 pod 'lottie-ios', '3.2.3'
+pod 'SDWebImageSwiftUI'
+pod 'Firebase/Core'
+pod 'FirebaseStorage'
 
   # Pods for BritWord
 

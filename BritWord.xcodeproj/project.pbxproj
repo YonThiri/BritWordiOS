@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2108868F5099B7354524BD1C /* Pods_BritWord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0E043BA2AD936F6CB43920 /* Pods_BritWord.framework */; };
-		B50258A82B52794C0031C3A1 /* ListeningDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50258A72B52794C0031C3A1 /* ListeningDetailView.swift */; };
 		B50258AA2B52A3930031C3A1 /* SimpleNavigationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50258A92B52A3930031C3A1 /* SimpleNavigationHeaderView.swift */; };
 		B50258AC2B52A7520031C3A1 /* PhoneticsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50258AB2B52A7520031C3A1 /* PhoneticsDetailView.swift */; };
 		B50258AE2B52C2DF0031C3A1 /* PhoneticsSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50258AD2B52C2DF0031C3A1 /* PhoneticsSymbolView.swift */; };
@@ -17,19 +16,11 @@
 		B53EA51C2B4C38AA00A1AAAF /* NavigationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA51B2B4C38AA00A1AAAF /* NavigationHeaderView.swift */; };
 		B53EA51E2B4C58F300A1AAAF /* DifferentWordTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA51D2B4C58F300A1AAAF /* DifferentWordTextView.swift */; };
 		B53EA5202B4CFB9800A1AAAF /* HomeCoursesDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA51F2B4CFB9800A1AAAF /* HomeCoursesDestination.swift */; };
-		B53EA5232B4D363100A1AAAF /* ListeningListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5222B4D363100A1AAAF /* ListeningListsView.swift */; };
-		B53EA5252B4D3B7600A1AAAF /* ListeningItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5242B4D3B7600A1AAAF /* ListeningItemView.swift */; };
 		B53EA5272B4E48D500A1AAAF /* PhoneticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5262B4E48D500A1AAAF /* PhoneticsView.swift */; };
 		B53EA52A2B4E637300A1AAAF /* PhoneticsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5292B4E637300A1AAAF /* PhoneticsListView.swift */; };
 		B53EA52D2B4E676A00A1AAAF /* TestStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA52C2B4E676A00A1AAAF /* TestStartView.swift */; };
-		B53EA52F2B4E8E7700A1AAAF /* QuizStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA52E2B4E8E7700A1AAAF /* QuizStartView.swift */; };
-		B53EA5312B4E8E8200A1AAAF /* FlashCardStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5302B4E8E8200A1AAAF /* FlashCardStartView.swift */; };
 		B53EA5332B4E8E9800A1AAAF /* ExerciseStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5322B4E8E9800A1AAAF /* ExerciseStartView.swift */; };
-		B53EA53A2B4E9AA500A1AAAF /* FlashCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5392B4E9AA500A1AAAF /* FlashCardView.swift */; };
 		B53EA53C2B4EA7CE00A1AAAF /* LearningProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA53B2B4EA7CE00A1AAAF /* LearningProgressView.swift */; };
-		B53EA53E2B4EB1C700A1AAAF /* FlashCardChoiceButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA53D2B4EB1C700A1AAAF /* FlashCardChoiceButtonView.swift */; };
-		B53EA5402B4ED19A00A1AAAF /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA53F2B4ED19A00A1AAAF /* QuizView.swift */; };
-		B53EA5422B4ED75A00A1AAAF /* QuizChoiceButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5412B4ED75A00A1AAAF /* QuizChoiceButtonView.swift */; };
 		B53EA5442B4F971300A1AAAF /* ResultSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5432B4F971300A1AAAF /* ResultSheetView.swift */; };
 		B53EA5462B4F994100A1AAAF /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5452B4F994100A1AAAF /* ButtonView.swift */; };
 		B53EA5482B4FE60D00A1AAAF /* ChapterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5472B4FE60D00A1AAAF /* ChapterListView.swift */; };
@@ -40,10 +31,19 @@
 		B53EA5522B50259600A1AAAF /* LearnVocabularyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5512B50259600A1AAAF /* LearnVocabularyView.swift */; };
 		B53EA5542B50E7E300A1AAAF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5532B50E7E300A1AAAF /* LoginView.swift */; };
 		B53EA5562B50EDC800A1AAAF /* IconTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53EA5552B50EDC800A1AAAF /* IconTextFieldView.swift */; };
+		B559D2FF2B7387D4009F0A10 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559D2FE2B7387D4009F0A10 /* AudioPlayer.swift */; };
+		B559D3012B7389AC009F0A10 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B559D3002B7389AC009F0A10 /* GoogleService-Info.plist */; };
+		B559D3032B739064009F0A10 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559D3022B739064009F0A10 /* RemoteImageView.swift */; };
 		B55E8A9B2B517747004DB0D1 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E8A9A2B517747004DB0D1 /* ResultView.swift */; };
 		B55E8A9E2B518047004DB0D1 /* result_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = B55E8A9C2B518046004DB0D1 /* result_animation.json */; };
 		B55E8A9F2B518047004DB0D1 /* confetti_effect.json in Resources */ = {isa = PBXBuildFile; fileRef = B55E8A9D2B518047004DB0D1 /* confetti_effect.json */; };
 		B55E8AA42B518477004DB0D1 /* WordsPhoneticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E8AA32B518477004DB0D1 /* WordsPhoneticsView.swift */; };
+		B568797A2B5786E20039CDD0 /* consonants_phonetics.json in Resources */ = {isa = PBXBuildFile; fileRef = B56879772B5786E10039CDD0 /* consonants_phonetics.json */; };
+		B568797B2B5786E20039CDD0 /* diphthongs_phonetics.json in Resources */ = {isa = PBXBuildFile; fileRef = B56879782B5786E20039CDD0 /* diphthongs_phonetics.json */; };
+		B568797C2B5786E20039CDD0 /* vowels_phonetics.json in Resources */ = {isa = PBXBuildFile; fileRef = B56879792B5786E20039CDD0 /* vowels_phonetics.json */; };
+		B568797E2B5786F70039CDD0 /* PhoneticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568797D2B5786F70039CDD0 /* PhoneticsModel.swift */; };
+		B56879802B58DE250039CDD0 /* test_lists.json in Resources */ = {isa = PBXBuildFile; fileRef = B568797F2B58DE250039CDD0 /* test_lists.json */; };
+		B56879822B58DE3E0039CDD0 /* TestListsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56879812B58DE3E0039CDD0 /* TestListsModel.swift */; };
 		B56E1D162B466FBB00EFF481 /* BritWordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D152B466FBB00EFF481 /* BritWordApp.swift */; };
 		B56E1D182B466FBB00EFF481 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D172B466FBB00EFF481 /* SplashView.swift */; };
 		B56E1D1A2B466FBD00EFF481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56E1D192B466FBD00EFF481 /* Assets.xcassets */; };
@@ -61,18 +61,40 @@
 		B56E1D3D2B46F5C400EFF481 /* baloo2_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B56E1D372B46F5C400EFF481 /* baloo2_bold.ttf */; };
 		B56E1D412B46F65600EFF481 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D402B46F65600EFF481 /* Colors.swift */; };
 		B56E1D432B46F79A00EFF481 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D422B46F79A00EFF481 /* Fonts.swift */; };
-		B56E1D452B47135B00EFF481 /* WordOfTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D442B47135B00EFF481 /* WordOfTheDayView.swift */; };
 		B56E1D492B47147E00EFF481 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D482B47147E00EFF481 /* Modifiers.swift */; };
-		B56E1D4B2B4716A500EFF481 /* RoundedCustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D4A2B4716A500EFF481 /* RoundedCustomShape.swift */; };
 		B56E1D4D2B47B0CB00EFF481 /* CoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D4C2B47B0CB00EFF481 /* CoursesView.swift */; };
-		B56E1D4F2B47D59400EFF481 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D4E2B47D59400EFF481 /* ProfileView.swift */; };
-		B56E1D512B4840AC00EFF481 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D502B4840AC00EFF481 /* ExerciseView.swift */; };
+		B56E1D4F2B47D59400EFF481 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D4E2B47D59400EFF481 /* HeaderView.swift */; };
+		B56E1D512B4840AC00EFF481 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D502B4840AC00EFF481 /* CategoriesView.swift */; };
+		B5720EC32B72079D00B06183 /* DifferentWordsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5720EC22B72079D00B06183 /* DifferentWordsRowView.swift */; };
+		B5720EC62B7208F100B06183 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5720EC52B7208F100B06183 /* Extensions.swift */; };
+		B5B009CA2B73C5AE004A30FA /* DifferentWordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B009C92B73C5AE004A30FA /* DifferentWordsViewModel.swift */; };
+		B5B136452BA0BE9B0013C293 /* Dimens.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B136442BA0BE9B0013C293 /* Dimens.swift */; };
+		B5B136472BA1537F0013C293 /* ExercisesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B136462BA1537F0013C293 /* ExercisesView.swift */; };
+		B5B1364A2BA2C9770013C293 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = B5B136492BA2C9770013C293 /* Auth */; };
+		B5B1364C2BA2C9770013C293 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = B5B1364B2BA2C9770013C293 /* Functions */; };
+		B5B1364E2BA2C9770013C293 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = B5B1364D2BA2C9770013C293 /* PostgREST */; };
+		B5B136502BA2C9770013C293 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = B5B1364F2BA2C9770013C293 /* Realtime */; };
+		B5B136522BA2C9770013C293 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = B5B136512BA2C9770013C293 /* Storage */; };
+		B5B136572BA2F77E0013C293 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B136562BA2F77E0013C293 /* Table.swift */; };
+		B5B136592BA2FA650013C293 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B136582BA2FA650013C293 /* Keys.swift */; };
+		B5B1365B2BA2FE540013C293 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = B5B1365A2BA2FE540013C293 /* Auth */; };
+		B5B1365D2BA2FE540013C293 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = B5B1365C2BA2FE540013C293 /* Functions */; };
+		B5B1365F2BA2FE540013C293 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = B5B1365E2BA2FE540013C293 /* PostgREST */; };
+		B5B136612BA2FE540013C293 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = B5B136602BA2FE540013C293 /* Realtime */; };
+		B5B136632BA2FE540013C293 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = B5B136622BA2FE540013C293 /* Storage */; };
+		B5D53E6E2BA2FFD000289ABD /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = B5D53E6D2BA2FFD000289ABD /* Supabase */; };
+		B5D53E712BA4856000289ABD /* PhoneticsExampleItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D53E702BA4856000289ABD /* PhoneticsExampleItemView.swift */; };
+		B5D53E762BA6C1DF00289ABD /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D53E752BA6C1DF00289ABD /* TestViewModel.swift */; };
+		B5F783F92B5416C900D07B45 /* FillTheBlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F783F82B5416C900D07B45 /* FillTheBlankView.swift */; };
+		B5F783FB2B5443F800D07B45 /* SoundPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F783FA2B5443F800D07B45 /* SoundPlayerView.swift */; };
+		B5F783FD2B5526CC00D07B45 /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F783FC2B5526CC00D07B45 /* CodableBundleExtension.swift */; };
+		B5F783FF2B5526EC00D07B45 /* DifferentWordsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F783FE2B5526EC00D07B45 /* DifferentWordsModel.swift */; };
+		B5F8B29A2B553E8500A8BF48 /* StoryListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F8B2992B553E8500A8BF48 /* StoryListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		015C2FE97783EA357F6E4C45 /* Pods-BritWord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BritWord.debug.xcconfig"; path = "Target Support Files/Pods-BritWord/Pods-BritWord.debug.xcconfig"; sourceTree = "<group>"; };
 		06F15661BCD62B74D63058B4 /* Pods-BritWord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BritWord.release.xcconfig"; path = "Target Support Files/Pods-BritWord/Pods-BritWord.release.xcconfig"; sourceTree = "<group>"; };
-		B50258A72B52794C0031C3A1 /* ListeningDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningDetailView.swift; sourceTree = "<group>"; };
 		B50258A92B52A3930031C3A1 /* SimpleNavigationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNavigationHeaderView.swift; sourceTree = "<group>"; };
 		B50258AB2B52A7520031C3A1 /* PhoneticsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticsDetailView.swift; sourceTree = "<group>"; };
 		B50258AD2B52C2DF0031C3A1 /* PhoneticsSymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticsSymbolView.swift; sourceTree = "<group>"; };
@@ -81,19 +103,11 @@
 		B53EA51B2B4C38AA00A1AAAF /* NavigationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHeaderView.swift; sourceTree = "<group>"; };
 		B53EA51D2B4C58F300A1AAAF /* DifferentWordTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentWordTextView.swift; sourceTree = "<group>"; };
 		B53EA51F2B4CFB9800A1AAAF /* HomeCoursesDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoursesDestination.swift; sourceTree = "<group>"; };
-		B53EA5222B4D363100A1AAAF /* ListeningListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningListsView.swift; sourceTree = "<group>"; };
-		B53EA5242B4D3B7600A1AAAF /* ListeningItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningItemView.swift; sourceTree = "<group>"; };
 		B53EA5262B4E48D500A1AAAF /* PhoneticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticsView.swift; sourceTree = "<group>"; };
 		B53EA5292B4E637300A1AAAF /* PhoneticsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticsListView.swift; sourceTree = "<group>"; };
 		B53EA52C2B4E676A00A1AAAF /* TestStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStartView.swift; sourceTree = "<group>"; };
-		B53EA52E2B4E8E7700A1AAAF /* QuizStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizStartView.swift; sourceTree = "<group>"; };
-		B53EA5302B4E8E8200A1AAAF /* FlashCardStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardStartView.swift; sourceTree = "<group>"; };
 		B53EA5322B4E8E9800A1AAAF /* ExerciseStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseStartView.swift; sourceTree = "<group>"; };
-		B53EA5392B4E9AA500A1AAAF /* FlashCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardView.swift; sourceTree = "<group>"; };
 		B53EA53B2B4EA7CE00A1AAAF /* LearningProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningProgressView.swift; sourceTree = "<group>"; };
-		B53EA53D2B4EB1C700A1AAAF /* FlashCardChoiceButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardChoiceButtonView.swift; sourceTree = "<group>"; };
-		B53EA53F2B4ED19A00A1AAAF /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
-		B53EA5412B4ED75A00A1AAAF /* QuizChoiceButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizChoiceButtonView.swift; sourceTree = "<group>"; };
 		B53EA5432B4F971300A1AAAF /* ResultSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSheetView.swift; sourceTree = "<group>"; };
 		B53EA5452B4F994100A1AAAF /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		B53EA5472B4FE60D00A1AAAF /* ChapterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterListView.swift; sourceTree = "<group>"; };
@@ -104,10 +118,19 @@
 		B53EA5512B50259600A1AAAF /* LearnVocabularyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnVocabularyView.swift; sourceTree = "<group>"; };
 		B53EA5532B50E7E300A1AAAF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B53EA5552B50EDC800A1AAAF /* IconTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTextFieldView.swift; sourceTree = "<group>"; };
+		B559D2FE2B7387D4009F0A10 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		B559D3002B7389AC009F0A10 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B559D3022B739064009F0A10 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 		B55E8A9A2B517747004DB0D1 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		B55E8A9C2B518046004DB0D1 /* result_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = result_animation.json; sourceTree = "<group>"; };
 		B55E8A9D2B518047004DB0D1 /* confetti_effect.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = confetti_effect.json; sourceTree = "<group>"; };
 		B55E8AA32B518477004DB0D1 /* WordsPhoneticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsPhoneticsView.swift; sourceTree = "<group>"; };
+		B56879772B5786E10039CDD0 /* consonants_phonetics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = consonants_phonetics.json; sourceTree = "<group>"; };
+		B56879782B5786E20039CDD0 /* diphthongs_phonetics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = diphthongs_phonetics.json; sourceTree = "<group>"; };
+		B56879792B5786E20039CDD0 /* vowels_phonetics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vowels_phonetics.json; sourceTree = "<group>"; };
+		B568797D2B5786F70039CDD0 /* PhoneticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticsModel.swift; sourceTree = "<group>"; };
+		B568797F2B58DE250039CDD0 /* test_lists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_lists.json; sourceTree = "<group>"; };
+		B56879812B58DE3E0039CDD0 /* TestListsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListsModel.swift; sourceTree = "<group>"; };
 		B56E1D122B466FBB00EFF481 /* BritWord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BritWord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56E1D152B466FBB00EFF481 /* BritWordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BritWordApp.swift; sourceTree = "<group>"; };
 		B56E1D172B466FBB00EFF481 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -127,12 +150,24 @@
 		B56E1D3F2B46F5EB00EFF481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B56E1D402B46F65600EFF481 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B56E1D422B46F79A00EFF481 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		B56E1D442B47135B00EFF481 /* WordOfTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayView.swift; sourceTree = "<group>"; };
 		B56E1D482B47147E00EFF481 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
-		B56E1D4A2B4716A500EFF481 /* RoundedCustomShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCustomShape.swift; sourceTree = "<group>"; };
 		B56E1D4C2B47B0CB00EFF481 /* CoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesView.swift; sourceTree = "<group>"; };
-		B56E1D4E2B47D59400EFF481 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		B56E1D502B4840AC00EFF481 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		B56E1D4E2B47D59400EFF481 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		B56E1D502B4840AC00EFF481 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		B5720EC22B72079D00B06183 /* DifferentWordsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentWordsRowView.swift; sourceTree = "<group>"; };
+		B5720EC52B7208F100B06183 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B5B009C92B73C5AE004A30FA /* DifferentWordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentWordsViewModel.swift; sourceTree = "<group>"; };
+		B5B136442BA0BE9B0013C293 /* Dimens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimens.swift; sourceTree = "<group>"; };
+		B5B136462BA1537F0013C293 /* ExercisesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesView.swift; sourceTree = "<group>"; };
+		B5B136562BA2F77E0013C293 /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		B5B136582BA2FA650013C293 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		B5D53E702BA4856000289ABD /* PhoneticsExampleItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticsExampleItemView.swift; sourceTree = "<group>"; };
+		B5D53E752BA6C1DF00289ABD /* TestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
+		B5F783F82B5416C900D07B45 /* FillTheBlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillTheBlankView.swift; sourceTree = "<group>"; };
+		B5F783FA2B5443F800D07B45 /* SoundPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayerView.swift; sourceTree = "<group>"; };
+		B5F783FC2B5526CC00D07B45 /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
+		B5F783FE2B5526EC00D07B45 /* DifferentWordsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentWordsModel.swift; sourceTree = "<group>"; };
+		B5F8B2992B553E8500A8BF48 /* StoryListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryListModel.swift; sourceTree = "<group>"; };
 		CF0E043BA2AD936F6CB43920 /* Pods_BritWord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BritWord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -141,6 +176,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5B136522BA2C9770013C293 /* Storage in Frameworks */,
+				B5B1364E2BA2C9770013C293 /* PostgREST in Frameworks */,
+				B5B136632BA2FE540013C293 /* Storage in Frameworks */,
+				B5B1365D2BA2FE540013C293 /* Functions in Frameworks */,
+				B5B136612BA2FE540013C293 /* Realtime in Frameworks */,
+				B5B1365F2BA2FE540013C293 /* PostgREST in Frameworks */,
+				B5B1364C2BA2C9770013C293 /* Functions in Frameworks */,
+				B5B1365B2BA2FE540013C293 /* Auth in Frameworks */,
+				B5D53E6E2BA2FFD000289ABD /* Supabase in Frameworks */,
+				B5B1364A2BA2C9770013C293 /* Auth in Frameworks */,
+				B5B136502BA2C9770013C293 /* Realtime in Frameworks */,
 				2108868F5099B7354524BD1C /* Pods_BritWord.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,8 +206,8 @@
 		B53EA5212B4D361100A1AAAF /* DifferentWords */ = {
 			isa = PBXGroup;
 			children = (
+				B5D53E732BA4907C00289ABD /* CustomSubView */,
 				B53EA5192B4C34A100A1AAAF /* DifferentWordsView.swift */,
-				B53EA51D2B4C58F300A1AAAF /* DifferentWordTextView.swift */,
 			);
 			path = DifferentWords;
 			sourceTree = "<group>";
@@ -169,72 +215,44 @@
 		B53EA5282B4E491F00A1AAAF /* Phonetics */ = {
 			isa = PBXGroup;
 			children = (
-				B53EA5292B4E637300A1AAAF /* PhoneticsListView.swift */,
+				B5D53E722BA4903200289ABD /* CustomSubView */,
 				B53EA5262B4E48D500A1AAAF /* PhoneticsView.swift */,
 				B50258AB2B52A7520031C3A1 /* PhoneticsDetailView.swift */,
-				B50258AD2B52C2DF0031C3A1 /* PhoneticsSymbolView.swift */,
-				B50258AF2B52C45C0031C3A1 /* PhoneticsExampleView.swift */,
 			);
 			path = Phonetics;
-			sourceTree = "<group>";
-		};
-		B53EA52B2B4E675300A1AAAF /* Listening */ = {
-			isa = PBXGroup;
-			children = (
-				B53EA5222B4D363100A1AAAF /* ListeningListsView.swift */,
-				B53EA5242B4D3B7600A1AAAF /* ListeningItemView.swift */,
-				B50258A72B52794C0031C3A1 /* ListeningDetailView.swift */,
-			);
-			path = Listening;
 			sourceTree = "<group>";
 		};
 		B53EA5342B4E97C500A1AAAF /* Test */ = {
 			isa = PBXGroup;
 			children = (
 				B53EA52C2B4E676A00A1AAAF /* TestStartView.swift */,
+				B5F783F82B5416C900D07B45 /* FillTheBlankView.swift */,
 			);
 			path = Test;
-			sourceTree = "<group>";
-		};
-		B53EA5352B4E97CC00A1AAAF /* Quiz */ = {
-			isa = PBXGroup;
-			children = (
-				B53EA52E2B4E8E7700A1AAAF /* QuizStartView.swift */,
-				B53EA53F2B4ED19A00A1AAAF /* QuizView.swift */,
-				B53EA5412B4ED75A00A1AAAF /* QuizChoiceButtonView.swift */,
-			);
-			path = Quiz;
-			sourceTree = "<group>";
-		};
-		B53EA5362B4E97D300A1AAAF /* FlashCard */ = {
-			isa = PBXGroup;
-			children = (
-				B53EA5302B4E8E8200A1AAAF /* FlashCardStartView.swift */,
-				B53EA5392B4E9AA500A1AAAF /* FlashCardView.swift */,
-				B53EA53D2B4EB1C700A1AAAF /* FlashCardChoiceButtonView.swift */,
-			);
-			path = FlashCard;
 			sourceTree = "<group>";
 		};
 		B53EA5372B4E97E100A1AAAF /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
 				B53EA5342B4E97C500A1AAAF /* Test */,
-				B53EA5352B4E97CC00A1AAAF /* Quiz */,
-				B53EA5362B4E97D300A1AAAF /* FlashCard */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
 		};
-		B53EA5382B4E97FE00A1AAAF /* Courses */ = {
+		B53EA5382B4E97FE00A1AAAF /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				B55E8AA02B5181F9004DB0D1 /* Vocabulary */,
 				B53EA5212B4D361100A1AAAF /* DifferentWords */,
-				B53EA52B2B4E675300A1AAAF /* Listening */,
 				B53EA5282B4E491F00A1AAAF /* Phonetics */,
 			);
-			path = Courses;
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		B559D3042B73911E009F0A10 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 		B55E8AA02B5181F9004DB0D1 /* Vocabulary */ = {
@@ -257,7 +275,7 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		B55E8AA22B518256004DB0D1 /* Custom View */ = {
+		B55E8AA22B518256004DB0D1 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				B53EA51B2B4C38AA00A1AAAF /* NavigationHeaderView.swift */,
@@ -268,8 +286,10 @@
 				B53EA54B2B4FE91100A1AAAF /* BorderButtonView.swift */,
 				B55E8A9A2B517747004DB0D1 /* ResultView.swift */,
 				B50258A92B52A3930031C3A1 /* SimpleNavigationHeaderView.swift */,
+				B5F783FA2B5443F800D07B45 /* SoundPlayerView.swift */,
+				B559D3022B739064009F0A10 /* RemoteImageView.swift */,
 			);
-			path = "Custom View";
+			path = Components;
 			sourceTree = "<group>";
 		};
 		B56E1D092B466FBB00EFF481 = {
@@ -293,9 +313,11 @@
 		B56E1D142B466FBB00EFF481 /* BritWord */ = {
 			isa = PBXGroup;
 			children = (
+				B5B136402BA015120013C293 /* Managers */,
+				B559D3002B7389AC009F0A10 /* GoogleService-Info.plist */,
+				B5F784042B552A4700D07B45 /* Datas */,
 				B56E1D3F2B46F5EB00EFF481 /* Info.plist */,
 				B56E1D3E2B46F5C800EFF481 /* Fonts */,
-				B56E1D272B46C5F500EFF481 /* Animations */,
 				B56E1D262B46871800EFF481 /* Utilities */,
 				B56E1D252B46871100EFF481 /* Model */,
 				B56E1D242B46870A00EFF481 /* ViewModel */,
@@ -303,6 +325,7 @@
 				B56E1D152B466FBB00EFF481 /* BritWordApp.swift */,
 				B56E1D192B466FBD00EFF481 /* Assets.xcassets */,
 				B56E1D1B2B466FBD00EFF481 /* Preview Content */,
+				B5F783FC2B5526CC00D07B45 /* CodableBundleExtension.swift */,
 			);
 			path = BritWord;
 			sourceTree = "<group>";
@@ -318,12 +341,11 @@
 		B56E1D232B4686FE00EFF481 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B559D3042B73911E009F0A10 /* Others */,
 				B55E8AA12B51820C004DB0D1 /* Login */,
 				B56E1D532B49534F00EFF481 /* Splash */,
 				B56E1D522B49534500EFF481 /* Home */,
-				B53EA5382B4E97FE00A1AAAF /* Courses */,
-				B53EA5372B4E97E100A1AAAF /* Exercises */,
-				B55E8AA22B518256004DB0D1 /* Custom View */,
+				B55E8AA22B518256004DB0D1 /* Components */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -331,6 +353,8 @@
 		B56E1D242B46870A00EFF481 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B5B009C92B73C5AE004A30FA /* DifferentWordsViewModel.swift */,
+				B5D53E752BA6C1DF00289ABD /* TestViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -339,6 +363,10 @@
 			isa = PBXGroup;
 			children = (
 				B53EA51F2B4CFB9800A1AAAF /* HomeCoursesDestination.swift */,
+				B5F783FE2B5526EC00D07B45 /* DifferentWordsModel.swift */,
+				B5F8B2992B553E8500A8BF48 /* StoryListModel.swift */,
+				B568797D2B5786F70039CDD0 /* PhoneticsModel.swift */,
+				B56879812B58DE3E0039CDD0 /* TestListsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -346,13 +374,11 @@
 		B56E1D262B46871800EFF481 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				B56E1D302B46F02800EFF481 /* Constants.swift */,
+				B5720EC42B7208E200B06183 /* Extensions */,
+				B5B136412BA0428B0013C293 /* Constants */,
+				B5B1363F2BA015080013C293 /* Modifiers */,
+				B5B1363E2BA014FA0013C293 /* CustomShapes */,
 				B56E1D2A2B46C63D00EFF481 /* LottieView.swift */,
-				B56E1D402B46F65600EFF481 /* Colors.swift */,
-				B56E1D422B46F79A00EFF481 /* Fonts.swift */,
-				B56E1D482B47147E00EFF481 /* Modifiers.swift */,
-				B56E1D4A2B4716A500EFF481 /* RoundedCustomShape.swift */,
-				B53EA54D2B4FF47500A1AAAF /* DottedLineShape.swift */,
 				B53EA5552B50EDC800A1AAAF /* IconTextFieldView.swift */,
 			);
 			path = Utilities;
@@ -384,11 +410,10 @@
 		B56E1D522B49534500EFF481 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				B56E1D2C2B46C90C00EFF481 /* HomeView.swift */,
-				B56E1D442B47135B00EFF481 /* WordOfTheDayView.swift */,
-				B56E1D4C2B47B0CB00EFF481 /* CoursesView.swift */,
-				B56E1D4E2B47D59400EFF481 /* ProfileView.swift */,
-				B56E1D502B4840AC00EFF481 /* ExerciseView.swift */,
+				B5D53E742BA4909800289ABD /* CustomSubViews */,
+				B53EA5382B4E97FE00A1AAAF /* Categories */,
+				B53EA5372B4E97E100A1AAAF /* Exercises */,
+				B5D53E6F2BA3F10F00289ABD /* Courses */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -400,6 +425,111 @@
 				B56E1D2E2B46EFD800EFF481 /* LogoView.swift */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		B5720EC42B7208E200B06183 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B5720EC52B7208F100B06183 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B5B1363E2BA014FA0013C293 /* CustomShapes */ = {
+			isa = PBXGroup;
+			children = (
+				B53EA54D2B4FF47500A1AAAF /* DottedLineShape.swift */,
+			);
+			path = CustomShapes;
+			sourceTree = "<group>";
+		};
+		B5B1363F2BA015080013C293 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				B56E1D482B47147E00EFF481 /* Modifiers.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		B5B136402BA015120013C293 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B5B136532BA2F7100013C293 /* Manager */,
+				B559D2FE2B7387D4009F0A10 /* AudioPlayer.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		B5B136412BA0428B0013C293 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B56E1D302B46F02800EFF481 /* Constants.swift */,
+				B56E1D402B46F65600EFF481 /* Colors.swift */,
+				B56E1D422B46F79A00EFF481 /* Fonts.swift */,
+				B5B136442BA0BE9B0013C293 /* Dimens.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		B5B136532BA2F7100013C293 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B5B136562BA2F77E0013C293 /* Table.swift */,
+				B5B136582BA2FA650013C293 /* Keys.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		B5D53E6F2BA3F10F00289ABD /* Courses */ = {
+			isa = PBXGroup;
+			children = (
+				B55E8AA02B5181F9004DB0D1 /* Vocabulary */,
+			);
+			path = Courses;
+			sourceTree = "<group>";
+		};
+		B5D53E722BA4903200289ABD /* CustomSubView */ = {
+			isa = PBXGroup;
+			children = (
+				B53EA5292B4E637300A1AAAF /* PhoneticsListView.swift */,
+				B50258AD2B52C2DF0031C3A1 /* PhoneticsSymbolView.swift */,
+				B50258AF2B52C45C0031C3A1 /* PhoneticsExampleView.swift */,
+				B5D53E702BA4856000289ABD /* PhoneticsExampleItemView.swift */,
+			);
+			path = CustomSubView;
+			sourceTree = "<group>";
+		};
+		B5D53E732BA4907C00289ABD /* CustomSubView */ = {
+			isa = PBXGroup;
+			children = (
+				B53EA51D2B4C58F300A1AAAF /* DifferentWordTextView.swift */,
+				B5720EC22B72079D00B06183 /* DifferentWordsRowView.swift */,
+			);
+			path = CustomSubView;
+			sourceTree = "<group>";
+		};
+		B5D53E742BA4909800289ABD /* CustomSubViews */ = {
+			isa = PBXGroup;
+			children = (
+				B56E1D2C2B46C90C00EFF481 /* HomeView.swift */,
+				B56E1D4C2B47B0CB00EFF481 /* CoursesView.swift */,
+				B56E1D4E2B47D59400EFF481 /* HeaderView.swift */,
+				B56E1D502B4840AC00EFF481 /* CategoriesView.swift */,
+				B5B136462BA1537F0013C293 /* ExercisesView.swift */,
+			);
+			path = CustomSubViews;
+			sourceTree = "<group>";
+		};
+		B5F784042B552A4700D07B45 /* Datas */ = {
+			isa = PBXGroup;
+			children = (
+				B56E1D272B46C5F500EFF481 /* Animations */,
+				B568797F2B58DE250039CDD0 /* test_lists.json */,
+				B56879772B5786E10039CDD0 /* consonants_phonetics.json */,
+				B56879782B5786E20039CDD0 /* diphthongs_phonetics.json */,
+				B56879792B5786E20039CDD0 /* vowels_phonetics.json */,
+			);
+			path = Datas;
 			sourceTree = "<group>";
 		};
 		D4DD10159345ACD1B2AC04A3 /* Frameworks */ = {
@@ -428,6 +558,19 @@
 			dependencies = (
 			);
 			name = BritWord;
+			packageProductDependencies = (
+				B5B136492BA2C9770013C293 /* Auth */,
+				B5B1364B2BA2C9770013C293 /* Functions */,
+				B5B1364D2BA2C9770013C293 /* PostgREST */,
+				B5B1364F2BA2C9770013C293 /* Realtime */,
+				B5B136512BA2C9770013C293 /* Storage */,
+				B5B1365A2BA2FE540013C293 /* Auth */,
+				B5B1365C2BA2FE540013C293 /* Functions */,
+				B5B1365E2BA2FE540013C293 /* PostgREST */,
+				B5B136602BA2FE540013C293 /* Realtime */,
+				B5B136622BA2FE540013C293 /* Storage */,
+				B5D53E6D2BA2FFD000289ABD /* Supabase */,
+			);
 			productName = BritWord;
 			productReference = B56E1D122B466FBB00EFF481 /* BritWord.app */;
 			productType = "com.apple.product-type.application";
@@ -456,6 +599,9 @@
 				Base,
 			);
 			mainGroup = B56E1D092B466FBB00EFF481;
+			packageReferences = (
+				B5B136482BA2C9770013C293 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			productRefGroup = B56E1D132B466FBB00EFF481 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -477,8 +623,13 @@
 				B56E1D382B46F5C400EFF481 /* notos_extra.ttf in Resources */,
 				B56E1D1A2B466FBD00EFF481 /* Assets.xcassets in Resources */,
 				B56E1D3B2B46F5C400EFF481 /* baloo2_semibold.ttf in Resources */,
+				B568797C2B5786E20039CDD0 /* vowels_phonetics.json in Resources */,
+				B56879802B58DE250039CDD0 /* test_lists.json in Resources */,
+				B559D3012B7389AC009F0A10 /* GoogleService-Info.plist in Resources */,
 				B56E1D3D2B46F5C400EFF481 /* baloo2_bold.ttf in Resources */,
+				B568797B2B5786E20039CDD0 /* diphthongs_phonetics.json in Resources */,
 				B56E1D3C2B46F5C400EFF481 /* noto_regular.ttf in Resources */,
+				B568797A2B5786E20039CDD0 /* consonants_phonetics.json in Resources */,
 				B56E1D3A2B46F5C400EFF481 /* baloo2_regular.ttf in Resources */,
 				B56E1D292B46C5FE00EFF481 /* splashAnimation.json in Resources */,
 			);
@@ -533,37 +684,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56879822B58DE3E0039CDD0 /* TestListsModel.swift in Sources */,
 				B56E1D432B46F79A00EFF481 /* Fonts.swift in Sources */,
 				B53EA5332B4E8E9800A1AAAF /* ExerciseStartView.swift in Sources */,
 				B53EA5202B4CFB9800A1AAAF /* HomeCoursesDestination.swift in Sources */,
 				B53EA5442B4F971300A1AAAF /* ResultSheetView.swift in Sources */,
-				B53EA53A2B4E9AA500A1AAAF /* FlashCardView.swift in Sources */,
 				B55E8A9B2B517747004DB0D1 /* ResultView.swift in Sources */,
+				B5720EC62B7208F100B06183 /* Extensions.swift in Sources */,
+				B5B136592BA2FA650013C293 /* Keys.swift in Sources */,
 				B53EA5502B4FF7DF00A1AAAF /* ChapterItemView.swift in Sources */,
 				B53EA5562B50EDC800A1AAAF /* IconTextFieldView.swift in Sources */,
-				B56E1D4F2B47D59400EFF481 /* ProfileView.swift in Sources */,
+				B56E1D4F2B47D59400EFF481 /* HeaderView.swift in Sources */,
 				B50258AC2B52A7520031C3A1 /* PhoneticsDetailView.swift in Sources */,
 				B53EA5522B50259600A1AAAF /* LearnVocabularyView.swift in Sources */,
 				B56E1D492B47147E00EFF481 /* Modifiers.swift in Sources */,
-				B53EA5232B4D363100A1AAAF /* ListeningListsView.swift in Sources */,
-				B53EA52F2B4E8E7700A1AAAF /* QuizStartView.swift in Sources */,
 				B55E8AA42B518477004DB0D1 /* WordsPhoneticsView.swift in Sources */,
 				B53EA5272B4E48D500A1AAAF /* PhoneticsView.swift in Sources */,
-				B53EA5252B4D3B7600A1AAAF /* ListeningItemView.swift in Sources */,
 				B53EA51E2B4C58F300A1AAAF /* DifferentWordTextView.swift in Sources */,
-				B56E1D4B2B4716A500EFF481 /* RoundedCustomShape.swift in Sources */,
 				B56E1D2F2B46EFD800EFF481 /* LogoView.swift in Sources */,
+				B5D53E712BA4856000289ABD /* PhoneticsExampleItemView.swift in Sources */,
+				B5B009CA2B73C5AE004A30FA /* DifferentWordsViewModel.swift in Sources */,
 				B50258AE2B52C2DF0031C3A1 /* PhoneticsSymbolView.swift in Sources */,
-				B50258A82B52794C0031C3A1 /* ListeningDetailView.swift in Sources */,
+				B559D2FF2B7387D4009F0A10 /* AudioPlayer.swift in Sources */,
+				B5B136572BA2F77E0013C293 /* Table.swift in Sources */,
 				B56E1D182B466FBB00EFF481 /* SplashView.swift in Sources */,
+				B5B136472BA1537F0013C293 /* ExercisesView.swift in Sources */,
 				B56E1D2D2B46C90C00EFF481 /* HomeView.swift in Sources */,
-				B53EA53E2B4EB1C700A1AAAF /* FlashCardChoiceButtonView.swift in Sources */,
 				B50258B02B52C45C0031C3A1 /* PhoneticsExampleView.swift in Sources */,
 				B53EA5462B4F994100A1AAAF /* ButtonView.swift in Sources */,
-				B53EA5312B4E8E8200A1AAAF /* FlashCardStartView.swift in Sources */,
-				B53EA5402B4ED19A00A1AAAF /* QuizView.swift in Sources */,
+				B5F783FF2B5526EC00D07B45 /* DifferentWordsModel.swift in Sources */,
+				B5F783F92B5416C900D07B45 /* FillTheBlankView.swift in Sources */,
+				B5F8B29A2B553E8500A8BF48 /* StoryListModel.swift in Sources */,
+				B5B136452BA0BE9B0013C293 /* Dimens.swift in Sources */,
 				B53EA51A2B4C34A100A1AAAF /* DifferentWordsView.swift in Sources */,
-				B56E1D452B47135B00EFF481 /* WordOfTheDayView.swift in Sources */,
 				B53EA51C2B4C38AA00A1AAAF /* NavigationHeaderView.swift in Sources */,
 				B56E1D412B46F65600EFF481 /* Colors.swift in Sources */,
 				B56E1D162B466FBB00EFF481 /* BritWordApp.swift in Sources */,
@@ -571,16 +724,21 @@
 				B56E1D2B2B46C63D00EFF481 /* LottieView.swift in Sources */,
 				B56E1D312B46F02800EFF481 /* Constants.swift in Sources */,
 				B53EA52D2B4E676A00A1AAAF /* TestStartView.swift in Sources */,
-				B56E1D512B4840AC00EFF481 /* ExerciseView.swift in Sources */,
+				B568797E2B5786F70039CDD0 /* PhoneticsModel.swift in Sources */,
+				B56E1D512B4840AC00EFF481 /* CategoriesView.swift in Sources */,
 				B53EA53C2B4EA7CE00A1AAAF /* LearningProgressView.swift in Sources */,
 				B50258AA2B52A3930031C3A1 /* SimpleNavigationHeaderView.swift in Sources */,
 				B53EA5482B4FE60D00A1AAAF /* ChapterListView.swift in Sources */,
 				B53EA54E2B4FF47500A1AAAF /* DottedLineShape.swift in Sources */,
+				B559D3032B739064009F0A10 /* RemoteImageView.swift in Sources */,
+				B5D53E762BA6C1DF00289ABD /* TestViewModel.swift in Sources */,
+				B5F783FD2B5526CC00D07B45 /* CodableBundleExtension.swift in Sources */,
 				B53EA52A2B4E637300A1AAAF /* PhoneticsListView.swift in Sources */,
-				B53EA5422B4ED75A00A1AAAF /* QuizChoiceButtonView.swift in Sources */,
+				B5F783FB2B5443F800D07B45 /* SoundPlayerView.swift in Sources */,
 				B53EA54C2B4FE91100A1AAAF /* BorderButtonView.swift in Sources */,
 				B53EA5542B50E7E300A1AAAF /* LoginView.swift in Sources */,
 				B56E1D4D2B47B0CB00EFF481 /* CoursesView.swift in Sources */,
+				B5720EC32B72079D00B06183 /* DifferentWordsRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -790,6 +948,75 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B5B136482BA2C9770013C293 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B5B136492BA2C9770013C293 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5B136482BA2C9770013C293 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		B5B1364B2BA2C9770013C293 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5B136482BA2C9770013C293 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		B5B1364D2BA2C9770013C293 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5B136482BA2C9770013C293 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		B5B1364F2BA2C9770013C293 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5B136482BA2C9770013C293 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		B5B136512BA2C9770013C293 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5B136482BA2C9770013C293 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		B5B1365A2BA2FE540013C293 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5B136482BA2C9770013C293 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		B5B1365C2BA2FE540013C293 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5B136482BA2C9770013C293 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		B5B1365E2BA2FE540013C293 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5B136482BA2C9770013C293 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		B5B136602BA2FE540013C293 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5B136482BA2C9770013C293 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		B5B136622BA2FE540013C293 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5B136482BA2C9770013C293 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		B5D53E6D2BA2FFD000289ABD /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5B136482BA2C9770013C293 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B56E1D0A2B466FBB00EFF481 /* Project object */;
 }

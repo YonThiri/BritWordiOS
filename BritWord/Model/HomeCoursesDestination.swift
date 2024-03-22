@@ -10,11 +10,16 @@ import SwiftUI
 enum HomeCoursesDestination {
     case vocabulary
     case phonetics
-    case listening
     case differentWords
 }
 
-enum HomeExerciseDestination {
+enum HomeCategoriesDestination {
+    
+    case phonetics
+    case differentWords
+}
+
+enum HomeExercisesDestination {
     
     case test
     case quiz

@@ -28,17 +28,19 @@ struct IconTextFieldView: View {
                 
                 HStack {
                     if (isPasswordVisible) {
+                        
+                        // Custom Placeholder Font
                         TextField("",
                                   text: $text,
                                   prompt: Text(placeholder).foregroundColor(grayColor))
-                        .font(subTitle)
+                        .font(descriptionText)
                         
                     }
                     else{
-                        
+                        // Custom Placeholder Font
                         SecureField("", text: $text, prompt:
                                         Text(placeholder).foregroundColor(grayColor))
-                            .font(subTitle)
+                            .font(descriptionText)
                             .textInputAutocapitalization(.never)
                             .keyboardType(.asciiCapable) // This avoids suggestions bar on the keyboard.
                             .autocorrectionDisabled(true)
@@ -57,17 +59,18 @@ struct IconTextFieldView: View {
             // FOR EMAIL TEXT FIELD
             else{
                 
+                // Custom Placeholder Font
                 TextField("",
                           text: $text,
                           prompt: Text(placeholder).foregroundColor(grayColor))
-                .font(subTitle)
+                .font(descriptionText)
             }
         }
         .foregroundStyle(Color.accentColor)
         .frame(height: 50)
         .overlay(
             RoundedRectangle(cornerRadius: 10)
-                .stroke(textFieldColor, lineWidth: 1)
+                .stroke(phoneticsColor, lineWidth: 1)
         )
         .padding(.bottom, 15)
     }

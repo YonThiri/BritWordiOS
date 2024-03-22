@@ -30,7 +30,7 @@ struct LoginView: View {
                     HStack(spacing: 15) {
                         
                         Text("Welcome Back \nTo ")
-                            .font(loginTitle)
+                            .font(title1)
                         +
                         Text("BritWord")
                             .font(britTitle)
@@ -58,14 +58,6 @@ struct LoginView: View {
                             isPassword: true,
                             text: $passwordTextField)
                         
-                        Button(action: {
-                            
-                        }, label: {
-                            Text("Forgot Password?")
-                                .font(bodyText)
-                                .foregroundStyle(grayColor)
-                        })
-                        .buttonStyle(tapBounceButtonStyle())
                     }
                     
                     Button(action: {
