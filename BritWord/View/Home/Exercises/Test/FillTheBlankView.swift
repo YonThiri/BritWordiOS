@@ -25,6 +25,8 @@ struct FillTheBlankView: View {
     var pathFromFirebase = "Sounds/Test/"
     @StateObject var audioPlayer = AudioPlayer() // Initialize AudioPlayer
     @State var progress : Int = 1
+    @State private var question : String = ""
+    @State private var answer : String = ""
     
     var body: some View {
         
@@ -51,7 +53,6 @@ struct FillTheBlankView: View {
                     
                     // MARK: - QUESTION TEXT
                     HStack {
-                        
                         // First Part of question
                         Text(splitFirstPart())
                             .foregroundColor(blackColor)
@@ -80,6 +81,7 @@ struct FillTheBlankView: View {
                             isButtonDisabled[selectedIndex[selectedIndex.count - 1]] = false
                             selectedIndex.removeLast()
                         }
+                        
                     } label: {
                         Image(systemName: "delete.left.fill")
                             .imageScale(.large)
@@ -89,11 +91,14 @@ struct FillTheBlankView: View {
                     
                     // MARK: - FILL THE BLANK TEXT
                     VStack {
+
                         ForEach(Array(testVm.answer).indices, id: \.self) { index in
+
                             HStack {
                                 ForEach(0..<3 , id: \.self) { columnIndex in
                                     
                                     let arrayIndex = index * 3 + columnIndex
+
                                     
                                     if arrayIndex < Array(testVm.answer).count {
                                         
@@ -110,7 +115,6 @@ struct FillTheBlankView: View {
                                             }
                                             
                                         } label: {
-                                            
                                             Text("\(String(Array(testVm.answer)[arrayIndex]))")
                                                 .font(subTitle)
                                                 .foregroundColor(.white)
@@ -148,13 +152,14 @@ struct FillTheBlankView: View {
                 .presentationDragIndicator(.hidden)
                 .interactiveDismissDisabled()
         }
-        
+    
     }
     
     // MARK: - SPLIT FIRST PART BEFORE "_____"
     func splitFirstPart() -> String{
         let parts = testVm.question.components(separatedBy: "_____")
         let beforePlaceholder = parts.first ?? ""
+    
         return beforePlaceholder
     }
     
@@ -196,8 +201,6 @@ struct FillTheBlankView: View {
         }
     }
 }
-
-
 
 #Preview {
     FillTheBlankView()

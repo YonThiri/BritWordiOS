@@ -21,7 +21,7 @@ struct DifferentWordTextView: View {
         HStack {
             
             Button {
-                
+             
                 audioPlayer.isDownloaded = false
                 audioPlayer.playAudio(soundName: "\(soundName).mp3", pathFromFirebase: pathFromFirebase)
                 
@@ -50,6 +50,7 @@ struct DifferentWordTextView: View {
             ProgressView()
                 .tint(.accent)
                 .isHidden(audioPlayer.isDownloaded)
+
         }
         .buttonStyle(tapBounceButtonStyle())
     }

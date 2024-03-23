@@ -25,4 +25,3 @@ func generateRandomNumber(min : Int, max: Int) -> Int {
     let randomNumber = Int.random(in: min...max)
     return randomNumber
 }
-

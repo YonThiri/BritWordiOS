@@ -11,7 +11,7 @@ struct SoundPlayerView: View {
     
     // MARK: - PROPERTIES
     var color : Color
-    
+
     @State private var progress : Double = 0.5
     var soundName : String
     var pathFromFirebase : String
@@ -53,12 +53,10 @@ struct SoundPlayerView: View {
                     .buttonStyle(tapBounceButtonStyle())
                 }
                 
-                
             }
             .padding(.horizontal, 20)
             
         }//: SOUND PLAYER
-        
     }
 }
 
