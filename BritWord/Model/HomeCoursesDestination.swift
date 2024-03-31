@@ -8,9 +8,10 @@
 import SwiftUI
 
 enum HomeCoursesDestination {
-    case vocabulary
-    case phonetics
-    case differentWords
+    case beginner
+    case elementary
+    case preInter
+    case intermediate
 }
 
 enum HomeCategoriesDestination {

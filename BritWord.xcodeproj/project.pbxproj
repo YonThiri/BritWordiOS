@@ -62,6 +62,9 @@
 		B56E1D512B4840AC00EFF481 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E1D502B4840AC00EFF481 /* CategoriesView.swift */; };
 		B5720EC32B72079D00B06183 /* DifferentWordsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5720EC22B72079D00B06183 /* DifferentWordsRowView.swift */; };
 		B5720EC62B7208F100B06183 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5720EC52B7208F100B06183 /* Extensions.swift */; };
+		B598280A2BB91F510057EB35 /* ChapterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59828092BB91F500057EB35 /* ChapterListViewModel.swift */; };
+		B598280C2BB920C10057EB35 /* beginner_vocabulary.json in Resources */ = {isa = PBXBuildFile; fileRef = B598280B2BB920C10057EB35 /* beginner_vocabulary.json */; };
+		B598280E2BB97A730057EB35 /* HomeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598280D2BB97A730057EB35 /* HomeTitleView.swift */; };
 		B5B009CA2B73C5AE004A30FA /* DifferentWordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B009C92B73C5AE004A30FA /* DifferentWordsViewModel.swift */; };
 		B5B136452BA0BE9B0013C293 /* Dimens.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B136442BA0BE9B0013C293 /* Dimens.swift */; };
 		B5B136472BA1537F0013C293 /* ExercisesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B136462BA1537F0013C293 /* ExercisesView.swift */; };
@@ -151,6 +154,9 @@
 		B56E1D502B4840AC00EFF481 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		B5720EC22B72079D00B06183 /* DifferentWordsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentWordsRowView.swift; sourceTree = "<group>"; };
 		B5720EC52B7208F100B06183 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B59828092BB91F500057EB35 /* ChapterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterListViewModel.swift; sourceTree = "<group>"; };
+		B598280B2BB920C10057EB35 /* beginner_vocabulary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = beginner_vocabulary.json; sourceTree = "<group>"; };
+		B598280D2BB97A730057EB35 /* HomeTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTitleView.swift; sourceTree = "<group>"; };
 		B5B009C92B73C5AE004A30FA /* DifferentWordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentWordsViewModel.swift; sourceTree = "<group>"; };
 		B5B136442BA0BE9B0013C293 /* Dimens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimens.swift; sourceTree = "<group>"; };
 		B5B136462BA1537F0013C293 /* ExercisesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesView.swift; sourceTree = "<group>"; };
@@ -162,8 +168,8 @@
 		B5F783FC2B5526CC00D07B45 /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 		B5F783FE2B5526EC00D07B45 /* DifferentWordsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentWordsModel.swift; sourceTree = "<group>"; };
 		B5F8B2992B553E8500A8BF48 /* StoryListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryListModel.swift; sourceTree = "<group>"; };
-		B5F8C4752BADF5F8004A1026 /* PhoneticsDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhoneticsDetailView.swift; path = ../../../../../../../PhoneticsDetailView.swift; sourceTree = "<group>"; };
-		B5F8C4772BADF5FC004A1026 /* PhoneticsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhoneticsView.swift; path = ../../../../../../../PhoneticsView.swift; sourceTree = "<group>"; };
+		B5F8C4752BADF5F8004A1026 /* PhoneticsDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneticsDetailView.swift; sourceTree = "<group>"; };
+		B5F8C4772BADF5FC004A1026 /* PhoneticsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneticsView.swift; sourceTree = "<group>"; };
 		B5F8C4792BADF614004A1026 /* PhoneticsSymbolView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneticsSymbolView.swift; sourceTree = "<group>"; };
 		B5F8C47A2BADF614004A1026 /* PhoneticsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneticsListView.swift; sourceTree = "<group>"; };
 		B5F8C47B2BADF614004A1026 /* PhoneticsExampleItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneticsExampleItemView.swift; sourceTree = "<group>"; };
@@ -288,6 +294,7 @@
 				B50258A92B52A3930031C3A1 /* SimpleNavigationHeaderView.swift */,
 				B5F783FA2B5443F800D07B45 /* SoundPlayerView.swift */,
 				B559D3022B739064009F0A10 /* RemoteImageView.swift */,
+				B598280D2BB97A730057EB35 /* HomeTitleView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -355,6 +362,7 @@
 			children = (
 				B5B009C92B73C5AE004A30FA /* DifferentWordsViewModel.swift */,
 				B5D53E752BA6C1DF00289ABD /* TestViewModel.swift */,
+				B59828092BB91F500057EB35 /* ChapterListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -512,6 +520,7 @@
 		B5F784042B552A4700D07B45 /* Datas */ = {
 			isa = PBXGroup;
 			children = (
+				B598280B2BB920C10057EB35 /* beginner_vocabulary.json */,
 				B56E1D272B46C5F500EFF481 /* Animations */,
 				B568797F2B58DE250039CDD0 /* test_lists.json */,
 				B56879772B5786E10039CDD0 /* consonants_phonetics.json */,
@@ -628,6 +637,7 @@
 				B559D3012B7389AC009F0A10 /* GoogleService-Info.plist in Resources */,
 				B56E1D3D2B46F5C400EFF481 /* baloo2_bold.ttf in Resources */,
 				B568797B2B5786E20039CDD0 /* diphthongs_phonetics.json in Resources */,
+				B598280C2BB920C10057EB35 /* beginner_vocabulary.json in Resources */,
 				B56E1D3C2B46F5C400EFF481 /* noto_regular.ttf in Resources */,
 				B568797A2B5786E20039CDD0 /* consonants_phonetics.json in Resources */,
 				B56E1D3A2B46F5C400EFF481 /* baloo2_regular.ttf in Resources */,
@@ -728,6 +738,7 @@
 				B568797E2B5786F70039CDD0 /* PhoneticsModel.swift in Sources */,
 				B56E1D512B4840AC00EFF481 /* CategoriesView.swift in Sources */,
 				B53EA53C2B4EA7CE00A1AAAF /* LearningProgressView.swift in Sources */,
+				B598280E2BB97A730057EB35 /* HomeTitleView.swift in Sources */,
 				B50258AA2B52A3930031C3A1 /* SimpleNavigationHeaderView.swift in Sources */,
 				B53EA5482B4FE60D00A1AAAF /* ChapterListView.swift in Sources */,
 				B53EA54E2B4FF47500A1AAAF /* DottedLineShape.swift in Sources */,
@@ -736,6 +747,7 @@
 				B5F783FD2B5526CC00D07B45 /* CodableBundleExtension.swift in Sources */,
 				B5F783FB2B5443F800D07B45 /* SoundPlayerView.swift in Sources */,
 				B53EA54C2B4FE91100A1AAAF /* BorderButtonView.swift in Sources */,
+				B598280A2BB91F510057EB35 /* ChapterListViewModel.swift in Sources */,
 				B53EA5542B50E7E300A1AAAF /* LoginView.swift in Sources */,
 				B56E1D4D2B47B0CB00EFF481 /* CoursesView.swift in Sources */,
 				B5720EC32B72079D00B06183 /* DifferentWordsRowView.swift in Sources */,

@@ -11,7 +11,6 @@ struct PhoneticsExampleView: View {
     
     // MARK: - PROPERTIES
     var examples : [Example]
-    @StateObject var audioPlayer = AudioPlayer() // Initialize AudioPlayer
     
     var body: some View {
         
@@ -30,7 +29,7 @@ struct PhoneticsExampleView: View {
                         
                     PhoneticsExampleItemView(
                         example: example,
-                        index: index + 1, audioPlayer: audioPlayer)
+                        index: index + 1)
                 }
             }
             .frame(maxWidth: .infinity, alignment: .leading)

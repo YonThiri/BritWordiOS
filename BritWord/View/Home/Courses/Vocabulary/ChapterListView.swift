@@ -11,7 +11,7 @@ struct ChapterListView: View {
     // MARK: - PROPERTIES
     @State private var showSheetLevel : Bool = false
     @State private var vocabularyShowSheet : Bool = false
-    @StateObject var differentWordVm = DifferentWordsViewModel()
+    @StateObject var chapterList = DifferentWordsViewModel()
     
     var body: some View {
         ZStack {
@@ -27,7 +27,7 @@ struct ChapterListView: View {
                 // MARK: - CHAPTER LIST
                 List {
                     
-                    ForEach(differentWordVm.differentWordLists) { item in
+                    ForEach(0..<10, id: \.self) { item in
                         
                         ChapterItemView()
                            .foregroundStyle(grayColor)
@@ -48,11 +48,11 @@ struct ChapterListView: View {
             }
         }
         .ignoresSafeArea()
-        .sheet(isPresented: $showSheetLevel, content: {
-            LevelSheetView()
-                .presentationDetents([.height(300)])
-                .presentationDragIndicator(.hidden)
-        })
+//        .sheet(isPresented: $showSheetLevel, content: {
+//            LevelSheetView()
+//                .presentationDetents([.height(300)])
+//                .presentationDragIndicator(.hidden)
+//        })
     }
 }
 

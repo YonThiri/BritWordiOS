@@ -14,7 +14,7 @@ struct PhoneticsExampleItemView: View {
     
     @State var soundName : String = ""
     private let pathFromFirebase: String = "Sounds/Phonetics/"
-    @ObservedObject var audioPlayer: AudioPlayer
+    @StateObject var audioPlayer: AudioPlayer = AudioPlayer()
     
     var body: some View {
         
@@ -32,6 +32,7 @@ struct PhoneticsExampleItemView: View {
             
             Spacer()
             
+            
             ProgressView()
                 .tint(.accent)
                 .isHidden(audioPlayer.isDownloaded)
@@ -41,6 +42,7 @@ struct PhoneticsExampleItemView: View {
                 
                 audioPlayer.isDownloaded = false
                 audioPlayer.playAudio(soundName: "\(example.soundURL).mp3", pathFromFirebase: pathFromFirebase)
+                print("Audio Player is Downloaded \(audioPlayer.isDownloaded)")
                 
             }, label: {
                 Image("speaker")
@@ -62,5 +64,5 @@ struct PhoneticsExampleItemView: View {
 
 #Preview {
     
-    PhoneticsExampleItemView(example: vowelPhoneticLists.phoneticsList[0].example[0], index: 1, audioPlayer: .init())
+    PhoneticsExampleItemView(example: vowelPhoneticLists.phoneticsList[0].example[0], index: 1)
 }

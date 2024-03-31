@@ -67,18 +67,19 @@ struct CoursesView: View {
             
             switch type {
                 
-            case .vocabulary:
+            case .beginner:
                 ChapterListView()
-            case .phonetics:
-                PhoneticsView()
-            case .differentWords:
-                DifferentWordsView()
-            
+            case .elementary:
+                ChapterListView()
+            case .preInter:
+                ChapterListView()
+            case .intermediate:
+                ChapterListView()
             }
         }
     }
 }
 
 #Preview {
-    CoursesView(title: "Beginner", image: "preInter", color: beginnerColor, destinationSheet: .differentWords)
+    CoursesView(title: "Beginner", image: "preInter", color: beginnerColor, destinationSheet: .intermediate)
 }

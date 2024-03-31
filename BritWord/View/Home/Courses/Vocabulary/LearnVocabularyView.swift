@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct LearnVocabularyView: View {
+    
+    // MARK: - PROPERTIES
+    @StateObject var audioPlayer = AudioPlayer()
+    
     var body: some View {
         ZStack {
             backgroundColor
@@ -15,63 +19,49 @@ struct LearnVocabularyView: View {
             VStack {
                 
                 // MARK: - PROGRESS VIEW
-                LearningProgressView(color: phoneticsColor, progressCount: 1, totalQuestion: totalQuestion)
+                LearningProgressView(color: beginnerColor, progressCount: 1, totalQuestion: totalQuestion)
                 
-                VStack{
+                VStack {
                     
                     // MARK: - WORD & PHONETICS & MYANMAR MEANING
                     WordsPhoneticsView(
                         word: "Hello",
-                        phonetics: "/he'l/",
-                        myanmarMeaning: "မင်္ဂလာပါ")
+                        phonetics: "/he'l/")
                     
-                    // MARK: - IMAGE AND SOUND PLAYER VIEW
-                    VStack {
-                        Image("placeholder")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(maxHeight: .infinity)
+                    VStack(spacing: 20) {
                         
-                        // MARK: - SOUND PLAYER
-                        ZStack(alignment: .leading) {
+                        // MARK: - IMAGE AND SOUND PLAYER VIEW
+                        ZStack(alignment: .bottom) {
+                            RoundedRectangle(cornerRadius: 15)
+                                .fill(.white)
                             
-
-                            Button {
-                                
-                            } label: {
-                                Image("play")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 20, height: 20)
-                            }
-                            .buttonStyle(tapBounceButtonStyle())
-                            .padding(.leading, 20)
-
-                        }//: SOUND PLAYER
+                            Image("placeholder")
+                                .resizable()
+                                .scaledToFit()
+                            
+                            // MARK: - SOUND PLAYER
+                            SoundPlayerView(color: Color.accentColor, soundName: "", pathFromFirebase: "", audioPlayer: audioPlayer)
+                        }
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 250)
                         
-                    }//: IMAGE AND SOUND PLAYER VIEW
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 250)
-                    .background(
-                        RoundedRectangle(cornerRadius: 15)
-                            .fill(whiteColor)
-                    )
+                        // MARK: - USAGE
+                        ScrollView {
+                            VStack(spacing: 15) {
+                                ForEach(0..<3, id: \.self) { item in
+                                    
+                                    Text("1. Greeting someone for the first time")
+                                        .font(descriptionText)
+                                        .foregroundStyle(Color.accentColor)
+                                        
+                                }
+                            }
+                        }//: USAGE
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+
                 }
                 
-                // MARK: - USAGE
-                ScrollView {
-                    VStack(spacing: 15) {
-                        ForEach(0..<3, id: \.self) { item in
-                            
-                            Text("1. Greeting someone for the first time")
-                                .font(descriptionText)
-                                .foregroundStyle(phoneticsColor)
-                                
-                        }
-                    }
-                }//: USAGE
-                .frame(maxWidth: .infinity, alignment: .leading)
-
             }
             .padding()
             .padding(.top, 60)

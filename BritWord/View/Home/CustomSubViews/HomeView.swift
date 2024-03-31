@@ -34,15 +34,7 @@ struct HomeView: View {
                             VStack(alignment: .leading, spacing: 18) {
                                 
                                 // MARK: - COURSES TITLE
-                                HStack {
-                                    
-                                    RoundedRectangle(cornerRadius: 8)
-                                        .frame(width: 5, height: 30)
-                                        .foregroundStyle(Color.accentColor)
-                                    
-                                    Text("Courses")
-                                        .modifier(HeaderTitleModifier())
-                                }
+                                HomeTitleView(title: "Courses")
                                 
                                 HStack {
                                     
@@ -51,7 +43,7 @@ struct HomeView: View {
                                         title: "Beginner",
                                         image: "beginner",
                                         color: beginnerColor,
-                                        destinationSheet: .vocabulary)
+                                        destinationSheet: .beginner)
                                         
                                     
                                     // MARK: - Elementary
@@ -59,7 +51,7 @@ struct HomeView: View {
                                         title: "Elementary",
                                         image: "elementary",
                                         color: elementaryColor,
-                                        destinationSheet: .phonetics)
+                                        destinationSheet: .elementary)
                                     
                                     
                                 }//: HSTACK
@@ -71,7 +63,7 @@ struct HomeView: View {
                                         title: "Pre-Intermediate",
                                         image: "preInter",
                                         color: preInterColor,
-                                        destinationSheet: .vocabulary)
+                                        destinationSheet: .preInter)
                                         
                                     
                                     // MARK: - INTERMEDIATE
@@ -79,7 +71,7 @@ struct HomeView: View {
                                         title: "Intermediate",
                                         image: "intermediate",
                                         color: interColor,
-                                        destinationSheet: .phonetics)
+                                        destinationSheet: .intermediate)
                                     
                                     
                                 }//: HSTACK
@@ -92,15 +84,7 @@ struct HomeView: View {
                             VStack(alignment: .leading, spacing: 18) {
                                 
                                 // MARK: - CATEGORIES TITLE
-                                HStack {
-                                    
-                                    RoundedRectangle(cornerRadius: 8)
-                                        .frame(width: 5, height: 30)
-                                        .foregroundStyle(Color.accentColor)
-                                    
-                                    Text("Categories")
-                                        .modifier(HeaderTitleModifier())
-                                }
+                                HomeTitleView(title: "Categories")
                                 
                                 HStack {
                                     
@@ -121,19 +105,11 @@ struct HomeView: View {
                             }//: CATEGORIES
                             .padding(.top, objectTopPadding)
                             
-                            // MARK: - EXERCISES
+                            // MARK: - EXERCISES COMING SOON
                             VStack(alignment: .leading, spacing: 18) {
                                 
                                 // MARK: - EXERCISES TITLE
-                                HStack {
-                                    
-                                    RoundedRectangle(cornerRadius: 8)
-                                        .frame(width: 5, height: 30)
-                                        .foregroundStyle(Color.accentColor)
-                                    
-                                    Text("Exercises")
-                                        .modifier(HeaderTitleModifier())
-                                }
+                                HomeTitleView(title: "Exercises")
                                 
                                 VStack {
                                     
