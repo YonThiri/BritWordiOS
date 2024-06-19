@@ -2,7 +2,7 @@
 //  PhoneticsDetailview.swift
 //  BritWord
 //
-//  Created by Yon Thiri Aung on 13/01/2024.
+//  Created by Yon Thiri Aung on 13/04/01/2024.
 //
 
 import SwiftUI
@@ -28,7 +28,7 @@ struct PhoneticsDetailview: View {
             VStack(spacing: 20) {
                 
                 // MARK: - NAVIGATION HEADER
-                NavigationHeaderView(title: "Phonetics")
+                NavigationHeaderView()
                 
                 VStack(spacing: 20) {
                     // MARK: - PHONETICS SYMBOL, TYPE & DESCRIPTION
@@ -53,7 +53,7 @@ struct PhoneticsDetailview: View {
                             
                         }, label: {
                             Text("Back")
-                                .font(subTitle)
+                                .font(AppFont.subtitle)
                                 .foregroundStyle(phoneticsTextColor)
                         })
                         .frame(maxWidth: .infinity)
@@ -82,6 +82,7 @@ struct PhoneticsDetailview: View {
                 .padding()
                 
             }
+            .navigationBarBackButtonHidden(true)
         }
         .ignoresSafeArea()
     }

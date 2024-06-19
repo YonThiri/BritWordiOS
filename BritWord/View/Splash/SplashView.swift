@@ -16,9 +16,8 @@ struct SplashView: View {
         
         if showNextView {
 
-            //HomeView()
-            LoginView()
-
+            HomeView()
+            
         }
         else{
             

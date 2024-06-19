@@ -2,7 +2,7 @@
 //  PhoneticsExampleView.swift
 //  BritWord
 //
-//  Created by Yon Thiri Aung on 13/01/2024.
+//  Created by Yon Thiri Aung on 13/04/01/2024.
 //
 
 import SwiftUI
@@ -18,7 +18,7 @@ struct PhoneticsExampleView: View {
             
             // MARK: - EXAMPLE TITLE
             Text("Example")
-                .font(descriptionText)
+                .font(AppFont.body2)
                 .foregroundStyle(grayColor)
             
             

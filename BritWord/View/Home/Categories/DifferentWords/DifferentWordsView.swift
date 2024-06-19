@@ -2,14 +2,20 @@
 //  DifferentWords.swift
 //  BritWord
 //
-//  Created by Yon Thiri Aung on 08/01/2024.
+//  Created by Yon Thiri Aung on 08/04/01/2024.
 //
 
 import SwiftUI
+import Lottie
 
 struct DifferentWordsView: View {
     
-    @StateObject var differentWordVm = DifferentWordsViewModel()
+    @StateObject private var viewModel: DifferentWordsViewModel
+    
+    init() {
+        _viewModel = StateObject(wrappedValue: DifferentWordsViewModel(supabaseService: DIContainer().supabaseService))
+    }
+
     
     var body: some View {
         
@@ -20,12 +26,11 @@ struct DifferentWordsView: View {
             VStack(spacing: 0) {
                 
                 // MARK: - HEADER
-                NavigationHeaderView(
-                    title: "American Vs British")
+                NavigationHeaderView()
             
                 // MARK: - Word List
                 List{
-                    ForEach(differentWordVm.differentWordLists) { item in
+                    ForEach(viewModel.differentWords) { item in
                         
                         DifferentWordsRowView(differentWord: item)
                             .padding(.top, objectTopPadding)
@@ -37,10 +42,24 @@ struct DifferentWordsView: View {
                 .listStyle(PlainListStyle())
                 .scrollContentBackground(.hidden)
                 .scrollIndicators(.hidden)
+                .overlay(
+                    Group {
+                        if viewModel.isLoading {
+                            
+                            LottieView(animation: .named("loading"))
+                                .playbackMode(.playing(.toProgress(1, loopMode: .loop)))
+                                .frame(width: 250)
+                            
+                            
+                        } else if let error = viewModel.error {
+                            Text("Error: \(error.localizedDescription)")
+                        }
+                    }
+                )
                 
             }//: VSTACK
             .task {
-                try? await differentWordVm.fetchDifferentWords()
+                viewModel.fetchDifferentWords()
             }
         }//: ZSTACK
         .ignoresSafeArea()
@@ -50,5 +69,5 @@ struct DifferentWordsView: View {
 }
 
 #Preview {
-    DifferentWordsView(differentWordVm: DifferentWordsViewModel())
+    DifferentWordsView()
 }

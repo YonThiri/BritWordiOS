@@ -26,6 +26,8 @@ struct DifferentWordsRowView: View {
                 
                 // MARK: - WORD IMAGE
                 RemoteImageView(imageURL: differentWord.imageURL)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 200, alignment: .center)
                 
                 // MARK: - AMERICAN WORD
                 DifferentWordTextView(

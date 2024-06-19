@@ -11,6 +11,8 @@ import FirebaseCore
 @main
 struct BritWordApp: App {
     
+    let diContainer = DIContainer()
+    
     init() {
         FirebaseApp.configure()
     }
@@ -18,6 +20,7 @@ struct BritWordApp: App {
     var body: some Scene {
         WindowGroup {
             SplashView()
+                .environmentObject(diContainer)
         }
     }
 }

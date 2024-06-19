@@ -9,25 +9,32 @@ import Foundation
 import Supabase
 
 @MainActor
-final class DifferentWordsViewModel : ObservableObject {
-    
-    @Published var differentWordLists = [DifferentWordModel]()
-    
-    let supabase = SupabaseClient(supabaseURL: Keys.projectURL, supabaseKey: Keys.apiKey)
+class DifferentWordsViewModel: ObservableObject {
+    @Published var differentWords: [DifferentWordModel] = []
+    @Published var isLoading: Bool = false
+    @Published var error: Error?
 
-    // MARK: - Database
-    func fetchDifferentWords() async throws {
-        
-        let differentWords : [DifferentWordModel] = try await supabase.database
-            .from(Table.differentWords)
-            .select()
-            .order("id")
-            .execute()
-            .value
-        DispatchQueue.main.async {
-            self.differentWordLists = differentWords
-            print("Different \(differentWords)")
+    private let supabaseService: SupabaseServiceProtocol
+
+    init(supabaseService: SupabaseServiceProtocol) {
+        self.supabaseService = supabaseService
+    }
+
+    func fetchDifferentWords() {
+        isLoading = true
+        Task {
+            do {
+                let fetchedDifferentWords = try await supabaseService.fetchDifferentWords()
+                DispatchQueue.main.async {
+                    self.differentWords = fetchedDifferentWords
+                    self.isLoading = false
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    self.error = error
+                    self.isLoading = false
+                }
+            }
         }
     }
-    
 }

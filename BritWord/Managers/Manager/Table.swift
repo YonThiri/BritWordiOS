@@ -2,7 +2,7 @@
 //  Route.swift
 //  BritWord
 //
-//  Created by Yon Thiri Aung on 14/03/2024.
+//  Created by Yon Thiri Aung on 16/01/2024.
 //
 
 import Foundation
@@ -10,4 +10,5 @@ import Foundation
 enum Table {
     static let differentWords = "DifferentWords"
     static let testList = "Tests"
+    static let podcasts = "Podcasts"
 }

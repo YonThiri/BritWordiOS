@@ -2,7 +2,7 @@
 //  DifferentWordTextView.swift
 //  BritWord
 //
-//  Created by Yon Thiri Aung on 08/01/2024.
+//  Created by Yon Thiri Aung on 08/04/01/2024.
 //
 
 import SwiftUI
@@ -34,7 +34,7 @@ struct DifferentWordTextView: View {
                         .frame(width: 40, height: 40)
                     
                     Text(meaning)
-                        .font(subTitle)
+                        .font(AppFont.subtitle)
                         .foregroundStyle(blackColor)
                     
                 }

@@ -14,18 +14,13 @@ struct RemoteImageView: View {
     var imageURL : String
     
     var body: some View {
+        
         WebImage(url: URL(string: imageURL))
-            .onSuccess { image, data, cacheType in }
             .resizable()
-            .placeholder {
-                ProgressView()
-                    .tint(.accent)
-            }
-            .indicator(.activity) // Activity Indicator
-            .transition(.fade(duration: 0.5)) // Fade Transition with duration
+            .indicator(.activity)
             .scaledToFit()
-            .frame(maxWidth: .infinity)
-            .frame(height: 200, alignment: .center)
+            .clipShape(RoundedRectangle(cornerRadius: 15))
+            .shadow(color: .black.opacity(0.15), radius: 10, x: 0.0, y: 5.0)
     }
 }
 

@@ -28,7 +28,7 @@ struct PhoneticsExampleItemView: View {
             
             // Phonetic Symbol
             Text("\(example.phoneticsSymbol)")
-                .font(bodyText)
+                .font(AppFont.body2)
             
             Spacer()
             
@@ -57,7 +57,7 @@ struct PhoneticsExampleItemView: View {
             .buttonStyle(tapBounceButtonStyle())
             
         }
-        .font(descriptionText)
+        .font(AppFont.body2)
         .foregroundStyle(blackColor)
     }
 }

@@ -2,7 +2,7 @@
 //  HomeDestinationModel.swift
 //  BritWord
 //
-//  Created by Yon Thiri Aung on 09/01/2024.
+//  Created by Yon Thiri Aung on 09/04/01/2024.
 //
 
 import SwiftUI
@@ -18,6 +18,7 @@ enum HomeCategoriesDestination {
     
     case phonetics
     case differentWords
+    case stories
 }
 
 enum HomeExercisesDestination {

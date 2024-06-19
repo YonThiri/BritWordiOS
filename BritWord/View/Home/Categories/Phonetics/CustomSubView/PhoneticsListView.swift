@@ -2,7 +2,7 @@
 //  PhoneticsListView.swift
 //  BritWord
 //
-//  Created by Yon Thiri Aung on 10/01/2024.
+//  Created by Yon Thiri Aung on 10/04/01/2024.
 //
 
 import SwiftUI
@@ -12,7 +12,7 @@ struct PhoneticsListView: View {
     var columns: [GridItem] = Array(repeating: .init(.flexible(), spacing: 5), count: 5)
     var phonetics: PhoneticsListModel
     
-    @State private var phoneticsDetailSheet = false
+    @State private var showDetailView = false
     @State private var phoneticModel = PhoneticModel(id: 0, word: "Default", description: "Default", explanation: "default", example: [])
     @State private var phoneticIndex = 0
     @State private var buttonText = "Next"
@@ -20,11 +20,26 @@ struct PhoneticsListView: View {
     @State private var isFinish = false
     
     var body: some View {
+
         VStack(spacing: 15) {
+            
+//            NavigationLink(destination: 
+//                            PhoneticsDetailview(
+//                            phonetic: $phoneticModel,
+//                            buttonText: $buttonText,
+//                            isFirstItem: $isFirstItem,
+//                            isFinish: $isFinish,
+//                            onIncrementIndex: incrementIndex,
+//                            onDecrementIndex: decrementIndex
+//                        ), isActive: $showDetailView) {
+//                            EmptyView()
+//                        }
+//            
+//            
             
             // MARK: - TITLE
             Text(title)
-                .font(subTitle)
+                .font(AppFont.subtitle)
                 .foregroundColor(whiteColor)
                 .frame(maxWidth: .infinity)
                 .frame(height: 45)
@@ -39,7 +54,7 @@ struct PhoneticsListView: View {
                 ForEach(Array(phonetics.phoneticsList.enumerated()), id: \.1.id) { (index, item) in
                     
                     Text(item.word)
-                        .font(title1)
+                        .font(AppFont.title2)
                         .foregroundStyle(phoneticsTextColor)
                         .frame(maxWidth: .infinity)
                         .frame(height: 80)
@@ -55,23 +70,21 @@ struct PhoneticsListView: View {
             }//: GRID
             
         }//: VSTACK
-        
-        .fullScreenCover(isPresented: $phoneticsDetailSheet) {
+        .navigationDestination(isPresented: $showDetailView) {
             PhoneticsDetailview(
-                phonetic: $phoneticModel,
-                buttonText: $buttonText,
-                isFirstItem: $isFirstItem,
-                isFinish: $isFinish,
-                onIncrementIndex: incrementIndex,
-                onDecrementIndex: decrementIndex
-            )
+            phonetic: $phoneticModel,
+            buttonText: $buttonText,
+            isFirstItem: $isFirstItem,
+            isFinish: $isFinish,
+            onIncrementIndex: incrementIndex,
+            onDecrementIndex: decrementIndex)
         }
     }
     
     // MARK: - TAP GESTURE
     private func handleItemTap(_ index: Int) {
         phoneticModel = phonetics.phoneticsList[index]
-        phoneticsDetailSheet.toggle()
+        
         phoneticIndex = index
         
         if phonetics.phoneticsList.count - 1 == phoneticIndex {
@@ -80,6 +93,8 @@ struct PhoneticsListView: View {
             buttonText = "Next"
             isFirstItem = phoneticIndex == 0
         }
+        
+        showDetailView = true
     }
     
     // MARK: - INCREASE INDEX FROM DETAIL VIEW

@@ -2,7 +2,7 @@
 //  ProfileView.swift
 //  BritWord
 //
-//  Created by Yon Thiri Aung on 05/01/2024.
+//  Created by Yon Thiri Aung on 04/01/2024.
 //
 
 import SwiftUI
@@ -11,20 +11,22 @@ struct HeaderView: View {
     var body: some View {
         ZStack {
             
-            gradientColor
-                .ignoresSafeArea()
-                .frame(height: 180)
-            
-            VStack(alignment: .leading) {
-                Text("Explore & Learn!")
-                    .font(headerTitle)
-                    .foregroundStyle(whiteColor)
+            HStack(alignment: .center) {
+                Text("Britword")
+                    .font(AppFont.header)
+                    .foregroundStyle(Color.accentColor)
                 
-                Text("Let’s start learning")
-                    .font(bodyText)
-                    .foregroundStyle(secondaryTextColor)
+                Spacer()
+                
+                Button {
+                    
+                } label: {
+                    Image("chart")
+                        .resizable()
+                        .frame(width: 25, height: 25)
+                }
+
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.top, topNavigationPadding)
             .padding(.horizontal, 20)
             

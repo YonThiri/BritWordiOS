@@ -2,7 +2,7 @@
 //  PhoneticsView.swift
 //  BritWord
 //
-//  Created by Yon Thiri Aung on 10/01/2024.
+//  Created by Yon Thiri Aung on 10/04/01/2024.
 //
 
 import SwiftUI
@@ -19,8 +19,7 @@ struct PhoneticsView: View {
             backgroundColor
             
             VStack(spacing: 0) {
-                NavigationHeaderView(
-                    title: "Phonetics")
+                NavigationHeaderView()
                 
                 ScrollView {
                     
@@ -43,9 +42,10 @@ struct PhoneticsView: View {
                 .scrollIndicators(.hidden)
                 .padding(.horizontal, 20)
             }
-            
+            .navigationBarBackButtonHidden(true)
         }
         .ignoresSafeArea()
+        
     }
     
     func calculateItemHeight(for geometry: GeometryProxy) -> CGFloat {

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Lottie
 
 struct LogoView : View {
     
@@ -14,10 +15,12 @@ struct LogoView : View {
     
     var body: some View {
         ZStack {
-            gradientColor
+            Color.accentColor
                 .ignoresSafeArea()
             
-            LottieView(filename: "splashAnimation")
+            LottieView(animation: .named("splashAnimation"))
+                .playbackMode(.playing(.toProgress(1, loopMode: .playOnce)))
+            
                 .frame(height: 280)
                 .onAppear(perform: {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 4, execute: {
@@ -36,18 +39,19 @@ struct LogoView : View {
                     })//: SHOW LOADING
                     
                 })//: ON APPEAR
+            
+            
         }//: ZSTACK
         .overlay(alignment: .bottom) {
-            
-            ProgressView()
 
-                .scaleEffect(1.2)
+            Group {
 
-                .opacity(isShowLoading ? 1 : 0)
-                .progressViewStyle(.circular)
-                .tint(.white)
-                .padding(.bottom)
-            
+                LottieView(animation: .named("loadingWhite"))
+                    .playbackMode(.playing(.toProgress(1, loopMode: .loop)))
+                    .resizable()
+                    .frame(height: 150, alignment: .bottom)
+                    .opacity(isShowLoading ? 1 : 0)
+            }
         }//: OVERLAY
     }
 }

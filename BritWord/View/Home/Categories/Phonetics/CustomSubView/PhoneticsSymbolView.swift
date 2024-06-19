@@ -2,7 +2,7 @@
 //  PhoneticsSymbolView.swift
 //  BritWord
 //
-//  Created by Yon Thiri Aung on 13/01/2024.
+//  Created by Yon Thiri Aung on 13/04/01/2024.
 //
 
 import SwiftUI
@@ -32,12 +32,12 @@ struct PhoneticsSymbolView: View {
                             .frame(width: 80, height: 80)
                         
                         Text(symbol)
-                            .font(headerTitle)
+                            .font(AppFont.header2)
                             .foregroundStyle(phoneticsTextColor)
                     }
                     
                     Text(type)
-                        .font(subTitle)
+                        .font(AppFont.subtitle)
                         .foregroundStyle(whiteColor)
                 }
                 .padding()
@@ -45,7 +45,7 @@ struct PhoneticsSymbolView: View {
             
             // MARK: - PHONETICS DESCRIPTION
             Text(description)
-                .font(descriptionText)
+                .font(AppFont.body2)
                 .foregroundStyle(blackColor)
         }
         

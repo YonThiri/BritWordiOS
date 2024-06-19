@@ -1,4 +1,5 @@
 {
+  "originHash" : "00a6cdaea11b58a66659089c203644f4a0b5972944805fdc4514b1fb77f2d637",
   "pins" : [
     {
       "identity" : "keychainaccess",
@@ -10,12 +11,21 @@
       }
     },
     {
+      "identity" : "lottie-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/airbnb/lottie-ios.git",
+      "state" : {
+        "revision" : "769b88d83a42ca8d5572b020c96f47e3690b3796",
+        "version" : "4.4.3"
+      }
+    },
+    {
       "identity" : "supabase-swift",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/supabase-community/supabase-swift.git",
+      "location" : "https://github.com/supabase/supabase-swift.git",
       "state" : {
-        "revision" : "08eefdcfc75a8052c1fc0577418cff67d47b6332",
-        "version" : "2.4.0"
+        "revision" : "7222c4bb5a1f447915b43501faad7eaf89e50115",
+        "version" : "2.11.0"
       }
     },
     {
@@ -32,10 +42,10 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-crypto.git",
       "state" : {
-        "revision" : "f0525da24dc3c6cbb2b6b338b65042bc91cbc4bb",
-        "version" : "3.3.0"
+        "revision" : "bc1c29221f6dfeb0ebbfbc98eb95cd3d4967868e",
+        "version" : "3.4.0"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

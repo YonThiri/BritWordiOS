@@ -2,7 +2,7 @@
 //  ButtonView.swift
 //  BritWord
 //
-//  Created by Yon Thiri Aung on 11/01/2024.
+//  Created by Yon Thiri Aung on 11/04/01/2024.
 //
 
 import SwiftUI
@@ -14,7 +14,7 @@ struct ButtonView: View {
     
     var body: some View {
         Text(buttonTitle)
-            .font(descriptionText)
+            .font(AppFont.body2)
             .foregroundStyle(whiteColor)
             .frame(height: 50)
             .frame(minWidth: 100)

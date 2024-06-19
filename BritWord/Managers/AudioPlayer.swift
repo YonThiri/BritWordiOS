@@ -13,17 +13,29 @@ import SwiftUI
 class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
     var player: AVAudioPlayer?
     var playbackPosition: TimeInterval = 0 // Store current playback position
+    var timer: Timer?
+    
     @Published var isDownloaded = true
     @Published var isPlaying = false
-    
+    @Published var duration : TimeInterval = 0.0
+    @Published var currentTime : TimeInterval = 0.0
     
     func playAudio(soundName: String, pathFromFirebase: String) {
-        guard let url = cachedFileURL(soundName: soundName, pathFromFirebase: pathFromFirebase) else {
-            print("Local file not found.")
-            return
+        
+        print("Current Queue \(Thread.current)")
+        
+        DispatchQueue.global(qos: .background).async { [self] in
+            guard let url = cachedFileURL(soundName: soundName, pathFromFirebase: pathFromFirebase) else {
+                print("Local file not found.")
+                return
+            }
+            
+            DispatchQueue.main.async {
+                self.playSound(url: url)
+            }
         }
         
-        playSound(url: url)
+       
     }
     
     func cachedFileURL(soundName: String, pathFromFirebase: String) -> URL? {
@@ -42,12 +54,14 @@ class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
             return fileURL
         } else {
             // If file does not exist, download it from Firebase Storage
+            
             downloadAudio(from: fileURL, soundName: soundName, pathFromFirebase: pathFromFirebase)
             return nil
         }
     }
     
     func downloadAudio(from fileURL: URL, soundName: String, pathFromFirebase: String) {
+        
         let storageRef = Storage.storage().reference(withPath: "\(pathFromFirebase)\(soundName)")
         
         // Download the file from Firebase Storage to a local file URL
@@ -74,33 +88,51 @@ class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
             
             if player?.isPlaying == true {
                 isPlaying = true
+                //startTimer()
             }
             
-            print("Audio downloaded: \(isDownloaded) \(isPlaying)")
+            guard let player = player else { return }
+            duration = player.duration
+            print("Audio downloaded: \(isDownloaded) \(isPlaying) \(currentTime) \(duration)")
             
         } catch {
             print("Error initializing AVAudioPlayer: \(error.localizedDescription)")
         }
     }
     
+    func updateProgress() {
+        guard let player = player else { return }
+        currentTime = player.currentTime
+    }
+    
     // MARK: - AVAudioPlayerDelegate
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-        if flag {
-            // Audio playback finished successfully
-            isPlaying = false
-        } else {
-            // Audio playback finished with an error
-            print("Audio playback finished with an error.")
+       if flag {
+           // Audio playback finished successfully
+           isPlaying = false
+           //stopTimer()
+       } else {
+           // Audio playback finished with an error
+           print("Audio playback finished with an error.")
+       }
+   }
+    
+   func pause() {
+       if let player = player, player.isPlaying {
+           playbackPosition = player.currentTime // Store current playback position
+           player.pause()
+           isPlaying = false
+           //stopTimer()
+       }
+   }
+    
+    func seekToTime(time: Double) {
+        if let player = player {
+            player.currentTime = time
         }
     }
     
-    func pause() {
-        if let player = player, player.isPlaying {
-            playbackPosition = player.currentTime // Store current playback position
-            player.pause()
-            isPlaying = false
-        }
-    }
+    
 }
 
