@@ -20,7 +20,6 @@ struct PhoneticsDetailview: View {
     @Environment(\.dismiss) var dismiss
     
     
-    
     var body: some View {
         ZStack {
             backgroundColor

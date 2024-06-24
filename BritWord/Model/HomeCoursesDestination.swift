@@ -7,23 +7,23 @@
 
 import SwiftUI
 
-enum HomeCoursesDestination {
-    case beginner
-    case elementary
-    case preInter
-    case intermediate
-}
-
-enum HomeCategoriesDestination {
-    
-    case phonetics
-    case differentWords
-    case stories
-}
-
-enum HomeExercisesDestination {
-    
-    case test
-    case quiz
-    case flashCard
-}
+//enum HomeCoursesDestination {
+//    case beginner
+//    case elementary
+//    case preInter
+//    case intermediate
+//}
+//
+//enum HomeCategoriesDestination {
+//    
+//    case phonetics
+//    case differentWords
+//    case stories
+//}
+//
+//enum HomeExercisesDestination {
+//    
+//    case test
+//    case quiz
+//    case flashCard
+//}

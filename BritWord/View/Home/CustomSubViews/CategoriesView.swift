@@ -26,7 +26,7 @@ struct CategoriesView: View {
                     .scaledToFit()
                     .frame(width: 70, height: 70)
                 
-                VStack(alignment: .leading, spacing: 0) {
+                VStack(alignment: .leading, spacing: 5) {
                     Text(title)
                         .font(AppFont.body)
                         .minimumScaleFactor(0.01)
@@ -42,6 +42,7 @@ struct CategoriesView: View {
             .padding(.horizontal, 15)
         }
         .frame(height: 180)
+        .shadow(color: color.opacity(0.5), radius: 5, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 5)
         
     }
     

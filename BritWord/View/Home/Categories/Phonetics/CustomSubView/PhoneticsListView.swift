@@ -23,19 +23,6 @@ struct PhoneticsListView: View {
 
         VStack(spacing: 15) {
             
-//            NavigationLink(destination: 
-//                            PhoneticsDetailview(
-//                            phonetic: $phoneticModel,
-//                            buttonText: $buttonText,
-//                            isFirstItem: $isFirstItem,
-//                            isFinish: $isFinish,
-//                            onIncrementIndex: incrementIndex,
-//                            onDecrementIndex: decrementIndex
-//                        ), isActive: $showDetailView) {
-//                            EmptyView()
-//                        }
-//            
-//            
             
             // MARK: - TITLE
             Text(title)

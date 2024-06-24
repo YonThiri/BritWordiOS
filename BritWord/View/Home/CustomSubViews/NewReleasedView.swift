@@ -25,7 +25,7 @@ struct NewReleasedView: View {
                 RemoteImageView(imageURL: imageURL)
                     .scaledToFill()
                     .frame(width: 70, height: 70)
-                    //.clipShape(RoundedRectangle(cornerRadius: 15))
+                    .clipShape(RoundedRectangle(cornerRadius: 15))
                 
                 HStack {
                     VStack(alignment: .leading, spacing: 5) {

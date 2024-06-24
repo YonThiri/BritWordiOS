@@ -11,7 +11,7 @@ import SwiftUI
 @MainActor
 class PodcastsViewModel: ObservableObject {
     @Published var podcasts: [PodcastsModel] = []
-    @Published var isLoading: Bool = false
+    //@Published var isLoading: Bool = false
     @Published var error: Error?
     @Published var newReleased: [PodcastsModel] = []
     
@@ -21,8 +21,8 @@ class PodcastsViewModel: ObservableObject {
         self.supabaseService = supabaseService
     }
 
-    func fetchPodcasts(){
-        isLoading = true
+    func fetchPodcasts() throws {
+        //isLoading = true
 
         Task {
             do {
@@ -37,12 +37,12 @@ class PodcastsViewModel: ObservableObject {
                         self.newReleased = podcasts
                     }
                     
-                    self.isLoading = false
+                    //self.isLoading = false
                 }
             } catch {
                 DispatchQueue.main.async {
                     self.error = error
-                    self.isLoading = false
+                    //self.isLoading = false
                 }
             }
         }
