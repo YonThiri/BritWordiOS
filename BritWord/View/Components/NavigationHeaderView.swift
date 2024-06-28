@@ -29,7 +29,7 @@ struct NavigationHeaderView: View {
                         .fontWeight(.bold)
                         .foregroundStyle(blackColor)
                 })
-                .buttonStyle(tapBounceButtonStyle())
+                .buttonStyle(TapBounceButtonStyle())
                 
             }//: BUTTON
             

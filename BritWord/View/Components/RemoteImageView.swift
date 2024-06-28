@@ -20,7 +20,7 @@ struct RemoteImageView: View {
             .indicator(.activity)
             .scaledToFit()
             .clipShape(RoundedRectangle(cornerRadius: 15))
-            .shadow(color: .black.opacity(0.15), radius: 10, x: 0.0, y: 5.0)
+            
     }
 }
 

@@ -15,7 +15,7 @@ struct HeaderTitleModifier : ViewModifier {
     }
 }
 
-struct tapBounceButtonStyle: ButtonStyle {
+struct TapBounceButtonStyle: ButtonStyle {
   func makeBody(configuration: Self.Configuration) -> some View {
     configuration.label
           .scaleEffect(configuration.isPressed ? 0.9 : 1)

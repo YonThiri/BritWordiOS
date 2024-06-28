@@ -54,7 +54,7 @@ struct PhoneticsExampleItemView: View {
                             .fill(phoneticsColor)
                     )
             })
-            .buttonStyle(tapBounceButtonStyle())
+            .buttonStyle(TapBounceButtonStyle())
             
         }
         .font(AppFont.body2)

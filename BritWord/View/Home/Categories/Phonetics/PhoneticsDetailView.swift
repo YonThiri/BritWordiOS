@@ -57,7 +57,7 @@ struct PhoneticsDetailview: View {
                         })
                         .frame(maxWidth: .infinity)
                         .padding(.vertical)
-                        .buttonStyle(tapBounceButtonStyle())
+                        .buttonStyle(TapBounceButtonStyle())
                         
                         // MARK: - NEXT
                         Button(action: {
@@ -75,7 +75,7 @@ struct PhoneticsDetailview: View {
                         })
                         .frame(maxWidth: .infinity)
                         .padding(.vertical)
-                        .buttonStyle(tapBounceButtonStyle())
+                        .buttonStyle(TapBounceButtonStyle())
                     }
                 }
                 .padding()

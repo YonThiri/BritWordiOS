@@ -14,5 +14,6 @@ struct PodcastsModel: Codable, Identifiable {
     let image: String
     let audio: String
     let createdDate: String
-    
+    let duration : String
+    let speaker : String
 }

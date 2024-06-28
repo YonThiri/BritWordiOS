@@ -40,7 +40,7 @@ struct DailyStreakAlertView: View {
                 }, label: {
                     ButtonView(color: Color.accentColor, buttonTitle: "Got It")
                 })
-                .buttonStyle(tapBounceButtonStyle())
+                .buttonStyle(TapBounceButtonStyle())
             }
             .foregroundStyle(blackColor)
         }

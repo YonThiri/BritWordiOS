@@ -15,6 +15,8 @@ struct TrackItemView: View {
     var imageURL : String
     var title : String
     var sound : String
+    var duration : String
+    
     var body: some View {
         
         ZStack{
@@ -34,7 +36,7 @@ struct TrackItemView: View {
                         .foregroundStyle(blackColor)
                         .lineLimit(2)
                     
-                    Text("1 min")
+                    Text(duration)
                         .font(AppFont.footnote)
                         .foregroundStyle(grayColor)
                 }
@@ -51,6 +53,6 @@ struct TrackItemView: View {
 }
 
 #Preview {
-    TrackItemView(podcasts: [], imageURL: "", title: "", sound: "")
+    TrackItemView(podcasts: [], imageURL: "", title: "", sound: "", duration: "")
     
 }

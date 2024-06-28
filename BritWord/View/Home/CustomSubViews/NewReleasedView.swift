@@ -46,29 +46,6 @@ struct NewReleasedView: View {
                         }
                     }
                     
-                    Spacer()
-                    
-                    Button(action: {}, label: {
-                        HStack {
-                            
-                            Image(.playBtn)
-                                .resizable()
-                                .frame(width: 20, height: 20)
-                            
-                            Text("Play")
-                                .font(AppFont.body2).bold()
-                                .foregroundStyle(whiteColor)
-                        }
-                        .frame(height: 40)
-                        .padding(.horizontal)
-                        
-                        .background {
-                            Capsule()
-                                .fill(Color.accentColor)
-                        }
-                        
-                    })
-                    .buttonStyle(tapBounceButtonStyle())
                 }
                 
                 

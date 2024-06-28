@@ -39,7 +39,7 @@ struct PlayerView: View {
                             .fontWeight(.bold)
                             .foregroundStyle(blackColor)
                     })
-                    .buttonStyle(tapBounceButtonStyle())
+                    .buttonStyle(TapBounceButtonStyle())
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal, 20)
@@ -51,6 +51,7 @@ struct PlayerView: View {
                     RemoteImageView(imageURL: podcasts[index].image)
                         .frame(width: 250, height: 250)
                     
+                    
                     Spacer()
                     
                     VStack(alignment: .leading, spacing: 10) {
@@ -59,7 +60,7 @@ struct PlayerView: View {
                             .foregroundStyle(blackColor)
                             .lineLimit(2)
                         
-                        Text("\(formatDuration(seconds: audioPlayer.duration)) min")
+                        Text(podcasts[index].speaker)
                             .font(AppFont.body2)
                             .foregroundStyle(grayColor)
                     }
@@ -85,7 +86,7 @@ struct PlayerView: View {
                             
                             // Time labels
                             HStack {
-                                Text("\(formatDuration(seconds: audioPlayer.currentTime))")
+                                Text("\(formatDuration(seconds: currentTime))")
                                     .font(AppFont.body2)
                                 Spacer()
                                 Text("\(formatDuration(seconds: audioPlayer.duration))")
@@ -98,7 +99,10 @@ struct PlayerView: View {
                         HStack(spacing: 25) {
                             Button {
                                 if index > 0 {
+                                    audioPlayer.stopPlayback()
+                                    audioPlayer.cancelCurrentDownload()
                                     index -= 1
+                                    resetPlayback()
                                 }
                             } label: {
                                 Image(.backward)
@@ -106,7 +110,7 @@ struct PlayerView: View {
                                     .frame(width: 40, height: 40)
                                     .foregroundStyle(phoneticsTextColor)
                             }
-                            .buttonStyle(tapBounceButtonStyle())
+                            .buttonStyle(TapBounceButtonStyle())
                             
                             Button {
                                 if audioPlayer.isPlaying {
@@ -134,11 +138,14 @@ struct PlayerView: View {
                                         .frame(width: 80, height: 80)
                                 }
                             }
-                            .buttonStyle(tapBounceButtonStyle())
+                            .buttonStyle(TapBounceButtonStyle())
                             
                             Button {
                                 if index < podcasts.count - 1 {
+                                    audioPlayer.stopPlayback()
+                                    audioPlayer.cancelCurrentDownload()
                                     index += 1
+                                    resetPlayback()
                                 }
                             } label: {
                                 Image(.forward)
@@ -147,7 +154,7 @@ struct PlayerView: View {
                                     .frame(width: 40, height: 40)
                                     .foregroundStyle(phoneticsTextColor)
                             }
-                            .buttonStyle(tapBounceButtonStyle())
+                            .buttonStyle(TapBounceButtonStyle())
                         }
                         
                     }
@@ -164,6 +171,16 @@ struct PlayerView: View {
         .onChange(of: index) { newValue in
             fetchDataAndUpdateView() // Fetch data when index changes
         }
+        .onReceive(audioPlayer.$didFinishPlaying) { didFinishPlaying in
+            if didFinishPlaying {
+                audioPlayer.didFinishPlaying = false // Reset the property
+                if index < podcasts.count - 1 {
+                    index += 1
+                    fetchDataAndUpdateView()
+                    resetPlayback()
+                }
+            }
+        }
         .onReceive(Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()) { _ in
             audioPlayer.updateProgress()
         }
@@ -175,7 +192,15 @@ struct PlayerView: View {
         audioPlayer.isDownloaded = false
         audioPlayer.playAudio(soundName: podcasts[index].audio, pathFromFirebase: pathFromFirebase)
     }
+    
+    // Reset Current Time and Slider Value
+    func resetPlayback() {
+        currentTime = 0.0
+        sliderValue = 0.0
+    }
 }
+
+
 
 // Debouncer class to throttle updates
 class Debouncer {

@@ -50,7 +50,7 @@ struct SoundPlayerView: View {
                             .scaledToFit()
                             .frame(width: 25, height: 25)
                     }
-                    .buttonStyle(tapBounceButtonStyle())
+                    .buttonStyle(TapBounceButtonStyle())
                 }
                 
             }

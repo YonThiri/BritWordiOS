@@ -135,7 +135,7 @@ extension HomeView {
                             image: "phonetics",
                             color: phoneticsColor)
                     }
-                    .buttonStyle(tapBounceButtonStyle())
+                    .buttonStyle(TapBounceButtonStyle())
                     
                     NavigationLink(destination: TrackListView(podcasts: viewModel.podcasts)) {
                         CategoriesView(
@@ -144,7 +144,7 @@ extension HomeView {
                             image: "stories",
                             color: storyColor)
                     }
-                    .buttonStyle(tapBounceButtonStyle())
+                    .buttonStyle(TapBounceButtonStyle())
                 }
                 
                 HStack {
@@ -155,7 +155,7 @@ extension HomeView {
                             image: "differentWords",
                             color: differentColor)
                     }
-                    .buttonStyle(tapBounceButtonStyle())
+                    .buttonStyle(TapBounceButtonStyle())
                 }
             }
         }//: CATEGORIES

@@ -36,7 +36,8 @@ struct TrackListView: View {
                             podcasts: podcasts,
                             imageURL: podcast.image,
                             title: podcast.title,
-                            sound: podcast.audio)
+                            sound: podcast.audio, 
+                            duration: podcast.duration)
                         .foregroundStyle(
                             grayColor
                         )
@@ -49,9 +50,9 @@ struct TrackListView: View {
                         .listRowInsets(
                             .init(
                                 top: 0,
-                                leading: 20,
+                                leading: 0,
                                 bottom: 0,
-                                trailing: 20
+                                trailing: 0
                             )
                         )
 

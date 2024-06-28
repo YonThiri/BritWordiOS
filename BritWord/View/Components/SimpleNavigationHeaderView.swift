@@ -27,7 +27,7 @@ struct SimpleNavigationHeaderView: View {
                     .fontWeight(.bold)
                     .foregroundStyle(color)
             })
-            .buttonStyle(tapBounceButtonStyle())
+            .buttonStyle(TapBounceButtonStyle())
             .padding(.top, 60)
             Spacer()
         }

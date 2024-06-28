@@ -12,31 +12,45 @@ struct LogoView : View {
     
     @Binding var showNextView : Bool
     @State private var isShowLoading : Bool = false
+    @State private var isAnimateLogo : Bool = false
     
     var body: some View {
         ZStack {
-            Color.accentColor
+            whiteColor
                 .ignoresSafeArea()
             
-            LottieView(animation: .named("splashAnimation"))
-                .playbackMode(.playing(.toProgress(1, loopMode: .playOnce)))
-            
-                .frame(height: 280)
+//            LottieView(animation: .named("splashAnimation"))
+//                .playbackMode(.playing(.toProgress(1, loopMode: .playOnce)))
+            Image("logo")
+                .resizable()
+                .scaledToFit()
+                .frame(width: isAnimateLogo ? 150 : 250)
+                .opacity(isAnimateLogo ? 1 : 0)
                 .onAppear(perform: {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 4, execute: {
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
                         
                         withAnimation(.spring) {
-                            isShowLoading = true
+                            isAnimateLogo = true
                             
                         }
                         DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
                             
                             withAnimation(.spring) {
-                                showNextView = true
+                                isShowLoading = true
+                                
                             }
-                        })//: CHANGE NEXT VIEW
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+                                
+                                withAnimation(.spring) {
+                                    showNextView = true
+                                }
+                            })//: CHANGE NEXT VIEW
+                            
+                        })//: SHOW LOADING
                         
-                    })//: SHOW LOADING
+                    })
+                    
                     
                 })//: ON APPEAR
             
@@ -46,7 +60,7 @@ struct LogoView : View {
 
             Group {
 
-                LottieView(animation: .named("loadingWhite"))
+                LottieView(animation: .named("loading"))
                     .playbackMode(.playing(.toProgress(1, loopMode: .loop)))
                     .resizable()
                     .frame(height: 150, alignment: .bottom)

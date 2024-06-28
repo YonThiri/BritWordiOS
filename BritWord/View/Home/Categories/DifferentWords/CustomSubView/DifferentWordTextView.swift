@@ -45,14 +45,14 @@ struct DifferentWordTextView: View {
                         .fill(differentColor)
                 )
             }
-            .buttonStyle(tapBounceButtonStyle())
+            .buttonStyle(TapBounceButtonStyle())
 
             ProgressView()
                 .tint(.accent)
                 .isHidden(audioPlayer.isDownloaded)
 
         }
-        .buttonStyle(tapBounceButtonStyle())
+        .buttonStyle(TapBounceButtonStyle())
     }
 }
 

@@ -21,7 +21,8 @@ struct DifferentWordsView: View {
         
         ZStack{
             
-            backgroundColor
+            Color(.differentBg)
+                //.ignoresSafeArea()
             
             VStack(spacing: 0) {
                 
@@ -34,7 +35,7 @@ struct DifferentWordsView: View {
                         
                         DifferentWordsRowView(differentWord: item)
                             .padding(.top, objectTopPadding)
-                            .listRowBackground(backgroundColor)
+                            .listRowBackground(Color(.differentBg))
                             .listRowSeparator(.hidden)
                     }
                     
