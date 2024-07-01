@@ -10,22 +10,19 @@ import SwiftUI
 struct SplashView: View {
     
     // MARK: - PROPERTIES
-    @State private var showNextView : Bool = false
+    @State private var showNextView: Bool = false
+    @State private var podcasts: [PodcastsModel] = []
+    @State private var newReleased: [PodcastsModel] = []
     
     var body: some View {
-        
         if showNextView {
-
-            HomeView()
-            
+            HomeView(podcasts: podcasts, newReleased: newReleased)
+        } else {
+            LogoView(showNextView: $showNextView, podcasts: $podcasts, newReleased: $newReleased)
         }
-        else{
-            
-            LogoView(showNextView: $showNextView)
-        }
-        
     }
 }
+
 #Preview {
     SplashView()
 }

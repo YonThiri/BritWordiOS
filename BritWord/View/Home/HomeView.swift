@@ -12,30 +12,24 @@ struct HomeView: View {
     
     // MARK: - PROPERTIES
     @StateObject private var newDayChecker = NewDayChecker()
+    
+    var podcasts: [PodcastsModel]
+    var newReleased: [PodcastsModel]
+    
     @EnvironmentObject var diContainer: DIContainer
-    @StateObject private var viewModel: PodcastsViewModel
-    
     @State private var selectedIndex: Int = 0
-    @State var isPresented : Bool = false
-    
-    init() {
-        _viewModel = StateObject(wrappedValue: PodcastsViewModel(supabaseService: DIContainer().supabaseService))
-    }
+    @State var isPresented: Bool = false
     
     var body: some View {
         NavigationStack {
             ZStack {
-                
                 // MARK: - BACKGROUND
                 backgroundColor
                     .ignoresSafeArea()
                 
                 VStack(spacing: 0) {
-                    
                     ScrollView(.vertical) {
-                        
                         LazyVStack(alignment: .leading) {
-                            
                             // MARK: - DAILY STREAK
                             dailyStreakView
                             
@@ -61,17 +55,14 @@ struct HomeView: View {
                     .interactiveDismissDisabled()
             })
             .fullScreenCover(isPresented: $isPresented, content: {
-                PlayerView(podcasts: viewModel.newReleased, index: $selectedIndex)
+                PlayerView(podcasts: newReleased, index: $selectedIndex)
             })
-            
         }//: NAVIGATION
-        .onAppear(perform: {
-            
+        .onAppear {
             newDayChecker.checkConditions(
                 onNewDay: { message in
                     print("new \(message) \(newDayChecker.dailyStreakCount)")
                     newDayChecker.isStartDay = true
-                    //newDayChecker.dailyStreakCount += 1
                 },
                 onSameDay: { message in
                     print("same \(message) \(newDayChecker.dailyStreakCount)")
@@ -80,29 +71,14 @@ struct HomeView: View {
                 onDifferentDay: { message in
                     print("different \(message) \(newDayChecker.dailyStreakCount)")
                     newDayChecker.isStartDay = true
-                   // newDayChecker.dailyStreakCount = 0
                 }
             )
-
-        })
-        .task {
-            
-            guard viewModel.podcasts.isEmpty else { return }
-            
-            do {
-                try viewModel.fetchPodcasts()
-            }
-            catch {
-                print("Error \(String(describing: viewModel.error))")
-            }
-            
         }
     }
-        
 }
 
 #Preview {
-    HomeView()
+    HomeView(podcasts: [], newReleased: [])
         .environmentObject(DIContainer())
 }
 
@@ -137,7 +113,7 @@ extension HomeView {
                     }
                     .buttonStyle(TapBounceButtonStyle())
                     
-                    NavigationLink(destination: TrackListView(podcasts: viewModel.podcasts)) {
+                    NavigationLink(destination: TrackListView(podcasts: podcasts)) {
                         CategoriesView(
                             title: "Listening",
                             description: "Engaging English Story",
@@ -173,7 +149,7 @@ extension HomeView {
             
             ScrollView(.horizontal) {
                 LazyHStack {
-                    ForEach(Array(viewModel.newReleased.enumerated()), id: \.element.id) { index, podcast in
+                    ForEach(Array(newReleased.enumerated()), id: \.element.id) { index, podcast in
                         NewReleasedView(title: podcast.title, imageURL: podcast.image, createdDate: podcast.createdDate)
                             .onTapGesture {
                                 selectedIndex.wrappedValue = index

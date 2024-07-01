@@ -167,6 +167,7 @@ struct PlayerView: View {
         .ignoresSafeArea()
         .onAppear {
             fetchDataAndUpdateView() // Fetch data when view appears
+            
         }
         .onChange(of: index) { newValue in
             fetchDataAndUpdateView() // Fetch data when index changes
@@ -185,12 +186,18 @@ struct PlayerView: View {
             audioPlayer.updateProgress()
         }
         .navigationBarBackButtonHidden(true)
+        .onDisappear {
+            // Stop playback when the view disappears
+            audioPlayer.stopPlayback()
+        }
     }
     
     // Fetch Data and Update View
     func fetchDataAndUpdateView() {
+        audioPlayer.configureAudioSession()
         audioPlayer.isDownloaded = false
         audioPlayer.playAudio(soundName: podcasts[index].audio, pathFromFirebase: pathFromFirebase)
+        
     }
     
     // Reset Current Time and Slider Value

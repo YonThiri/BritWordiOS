@@ -8,7 +8,6 @@
 import Foundation
 import Supabase
 
-@MainActor
 class DifferentWordsViewModel: ObservableObject {
     @Published var differentWords: [DifferentWordModel] = []
     @Published var isLoading: Bool = false
@@ -25,12 +24,16 @@ class DifferentWordsViewModel: ObservableObject {
         Task {
             do {
                 let fetchedDifferentWords = try await supabaseService.fetchDifferentWords()
-                DispatchQueue.main.async {
+                DispatchQueue.main.async { [weak self] in
+                    // Ensure self is still available
+                    guard let self = self else { return }
                     self.differentWords = fetchedDifferentWords
                     self.isLoading = false
                 }
             } catch {
-                DispatchQueue.main.async {
+                DispatchQueue.main.async { [weak self] in
+                    // Ensure self is still available
+                    guard let self = self else { return }
                     self.error = error
                     self.isLoading = false
                 }

@@ -8,12 +8,13 @@
 import Foundation
 import SwiftUI
 
-@MainActor
 class PodcastsViewModel: ObservableObject {
+    
+    //MARK: - PROPERTIES
     @Published var podcasts: [PodcastsModel] = []
-    //@Published var isLoading: Bool = false
     @Published var error: Error?
     @Published var newReleased: [PodcastsModel] = []
+    @Published var isShowLoading : Bool = false
     
     private let supabaseService: SupabaseServiceProtocol
 
@@ -21,30 +22,45 @@ class PodcastsViewModel: ObservableObject {
         self.supabaseService = supabaseService
     }
 
-    func fetchPodcasts() throws {
-        //isLoading = true
-
-        Task {
-            do {
-                let fetchedPodcasts = try await supabaseService.fetchPodcasts()
-                DispatchQueue.main.async { [self] in
-                    self.podcasts = fetchedPodcasts
-                    print("Fetch \(self.podcasts)")
-                    
-                    if self.podcasts.count > 5 {
-                        self.newReleased = Array(podcasts.prefix(5))
-                    } else {
-                        self.newReleased = podcasts
-                    }
-                    
-                    //self.isLoading = false
+    func fetchPodcasts() async throws {
+        
+        do {
+            
+            DispatchQueue.main.async { [weak self] in
+                
+                guard let self = self else { return }
+                
+                isShowLoading = true
+                
+            }
+            
+            let fetchedPodcasts = try await supabaseService.fetchPodcasts()
+            DispatchQueue.main.async { [weak self] in
+                
+                guard let self = self else { return }
+                
+                self.podcasts = fetchedPodcasts
+                
+                if self.podcasts.count > 5 {
+                    self.newReleased = Array(self.podcasts.prefix(5))
+                } else {
+                    self.newReleased = self.podcasts
                 }
-            } catch {
-                DispatchQueue.main.async {
-                    self.error = error
-                    //self.isLoading = false
-                }
+                
+                isShowLoading = false
+                
             }
         }
+        
+        catch(let error) {
+            print("DEBUG: ERROR \(error.localizedDescription)")
+            
+            DispatchQueue.main.async { [weak self] in
+            
+                guard let self = self else { return }
+                self.error = error
+            }
+        }
+        
     }
 }

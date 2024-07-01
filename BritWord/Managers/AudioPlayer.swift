@@ -22,6 +22,48 @@ class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
     @Published var currentTime: TimeInterval = 0.0
     @Published var didFinishPlaying = false // New property
 
+    override init() {
+        super.init()
+        configureAudioSession()
+        setupNotifications()
+    }
+
+    func configureAudioSession() {
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [])
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            print("Failed to set up audio session: \(error.localizedDescription)")
+        }
+    }
+
+    func setupNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(handleInterruption(_:)), name: AVAudioSession.interruptionNotification, object: nil)
+    }
+
+    @objc func handleInterruption(_ notification: Notification) {
+        guard let userInfo = notification.userInfo,
+              let typeValue = userInfo[AVAudioSessionInterruptionTypeKey] as? UInt,
+              let type = AVAudioSession.InterruptionType(rawValue: typeValue) else {
+            return
+        }
+
+        if type == .began {
+            // Interruption began, take appropriate actions (e.g., pause the player)
+            pause()
+        } else if type == .ended {
+            // Interruption ended, take appropriate actions (e.g., resume the player if it was playing before)
+            if let optionsValue = userInfo[AVAudioSessionInterruptionOptionKey] as? UInt {
+                let options = AVAudioSession.InterruptionOptions(rawValue: optionsValue)
+                if options.contains(.shouldResume) {
+                    // Resume playback
+                    player?.play()
+                    isPlaying = true
+                }
+            }
+        }
+    }
+
     func playAudio(soundName: String, pathFromFirebase: String) {
         print("Current Queue \(Thread.current)")
 

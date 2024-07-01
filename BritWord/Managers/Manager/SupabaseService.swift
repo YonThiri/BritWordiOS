@@ -22,6 +22,7 @@ class SupabaseService: SupabaseServiceProtocol {
     }
 
     func fetchPodcasts() async throws -> [PodcastsModel] {
+        
         let response : [PodcastsModel] = try await client
             .from("Podcasts")
             .select()
@@ -29,6 +30,7 @@ class SupabaseService: SupabaseServiceProtocol {
             .execute()
             .value
         return response
+        
     }
 
     func fetchDifferentWords() async throws -> [DifferentWordModel] {

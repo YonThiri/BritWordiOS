@@ -8,58 +8,76 @@
 import SwiftUI
 import Lottie
 
-struct LogoView : View {
+struct LogoView: View {
     
-    @Binding var showNextView : Bool
-    @State private var isShowLoading : Bool = false
-    @State private var isAnimateLogo : Bool = false
+    @Binding var showNextView: Bool
+    @Binding var podcasts: [PodcastsModel]
+    @Binding var newReleased: [PodcastsModel]
+    
+    @State private var isShowLoading: Bool = false
+    @State private var isAnimateLogo: Bool = false
+    @StateObject private var viewModel: PodcastsViewModel = PodcastsViewModel(supabaseService: DIContainer().supabaseService)
     
     var body: some View {
         ZStack {
             whiteColor
                 .ignoresSafeArea()
             
-//            LottieView(animation: .named("splashAnimation"))
-//                .playbackMode(.playing(.toProgress(1, loopMode: .playOnce)))
-            Image("logo")
+            Image(.logo)
                 .resizable()
                 .scaledToFit()
-                .frame(width: isAnimateLogo ? 150 : 250)
-                .opacity(isAnimateLogo ? 1 : 0)
-                .onAppear(perform: {
-                    
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+                .frame(width: isAnimateLogo ? 60 : 100)
+                .frame(width: 150, height: 150)
+                .background(
+                    RoundedRectangle(cornerRadius: 15)
+                        .foregroundStyle(whiteColor)
+                        .shadow(color: grayColor.opacity(0.1), radius: 10, x: 0, y: 10)
                         
-                        withAnimation(.spring) {
-                            isAnimateLogo = true
+                )
+                .opacity(isAnimateLogo ? 1 : 0)
+        }//: ZSTACK
+        .task {
+            
+            // Animate the logo
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                withAnimation(.spring) {
+                    isAnimateLogo = true
+                }
+                
+                // Wait for 2 seconds after the logo animation is completed
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    isShowLoading = true
+                }
+            }
+            
+            guard viewModel.podcasts.isEmpty else { return }
+            do {
+                try await viewModel.fetchPodcasts()
+                withAnimation(.spring) {
+                    
+                    // Update the binding properties
+                    podcasts = viewModel.podcasts
+                    newReleased = viewModel.newReleased
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                        
+                        isShowLoading = viewModel.isShowLoading
+                        
+                        if !isShowLoading {
+                            
+                            showNextView = true
                             
                         }
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-                            
-                            withAnimation(.spring) {
-                                isShowLoading = true
-                                
-                            }
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-                                
-                                withAnimation(.spring) {
-                                    showNextView = true
-                                }
-                            })//: CHANGE NEXT VIEW
-                            
-                        })//: SHOW LOADING
                         
-                    })
-                    
-                    
-                })//: ON APPEAR
-            
-            
-        }//: ZSTACK
+                    }
+                }
+            } catch {
+                // Handle the error
+                print("Failed to fetch podcasts: \(error)")
+            }
+        }
         .overlay(alignment: .bottom) {
-
             Group {
-
                 LottieView(animation: .named("loading"))
                     .playbackMode(.playing(.toProgress(1, loopMode: .loop)))
                     .resizable()
@@ -71,6 +89,10 @@ struct LogoView : View {
 }
 
 
+//
+//
 #Preview {
-    LogoView(showNextView: .constant(false))
+    LogoView(showNextView: .constant(true), podcasts: .constant([]), newReleased: .constant([]))
+    
+    
 }
